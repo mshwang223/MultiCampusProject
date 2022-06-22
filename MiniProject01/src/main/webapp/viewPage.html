@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/51724f5bf4.js"></script>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	background: #fafafa;
+}
+
+th, td {
+	padding: 0px;
+}
+
+table {
+	border-spacing: 0px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/**********/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	font-family: "MYYeongnamnu", sans-serif;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	text-align: center;
+}
+
+.box1 {
+	position: absolute;
+	top: 40px;
+	left: 87%;
+	font-size: 2em;
+	animation: slide 4s;
+	z-index: -2;
+}
+
+.box2 {
+	position: absolute;
+	top: 110px;
+	left: 90%;
+	font-size: 2em;
+	animation: slide2 3s;
+	z-index: -1;
+}
+
+#wrap {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.menuBox {
+	position: fixed;
+	width: 300px;
+	height: 100%;
+}
+
+.menuBox .search {
+	position: absolute;
+	top: 50px;
+}
+
+.menuBox #search {
+	left: 20px;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.menuBox #searchBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	left: 200px;
+	width: 60px;
+	height: 30px;
+	border: none;
+	box-shadow: 8px 5px 15px rgba(31, 38, 135, 0.37);
+	border-radius: 5px;
+	cursor: pointer;
+	background: radial-gradient(circle, #1f1c2c, #928dab);
+	color: white;
+	font-weight: bold;
+}
+
+.menuBox .join {
+	display: inline-block;
+	position: relative;
+	top: 60px;
+	right: 0px;
+	width: 40%;
+	height: 25px;
+	line-height: 25px;
+	box-shadow: 8px 5px 10px rgba(31, 38, 135, 0.3);
+	border-radius: 5px;
+	text-align: center;
+	font-family: "MYYeongnamnu", sans-serif;
+	cursor: pointer;
+}
+
+.menuBox ul {
+	position: absolute;
+	list-style: none;
+	width: 100%;
+	height: 70%;
+	bottom: 0;
+}
+
+@font-face {
+	font-family: 'MYYeongnamnu';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/MYYeongnamnu.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.menuBox ul li {
+	text-align: center;
+	font-size: 2em;
+	font-family: "MYYeongnamnu", sans-serif;
+	height: 100px;
+	line-height: 100px;
+	cursor: pointer;
+	border: none;
+	z-index: 1;
+	margin: 10px;
+}
+
+.menuBox ul li:hover {
+	font-weight: bold;
+}
+
+.menuBox ul li .box3 {
+	width: 100%;
+	position: relative;
+	top: -100px;
+	left: -280px;
+	height: 100px;
+	z-index: -1;
+}
+
+.menuBox ul li:hover .box3 {
+	animation: slide3 0.5s forwards;
+}
+
+@media ( min-width : 802px) {
+	.listSize {
+		width: 802px;
+	}
+}
+
+@keyframes slide {from { left :-100px;
+	
+}
+
+to {
+	left: 87%;
+}
+
+}
+@keyframes slide2 {from { left :-100px;
+	
+}
+
+to {
+	left: 90%;
+}
+
+}
+@keyframes slide3 {from { left :-280px;
+	
+}
+
+to {
+	left: 0px;
+}
+
+}
+.btnBlueGreen {
+	background: #00AE68;
+}
+
+.btnRed {
+	background: #FF607F;
+}
+
+.btnFade.btnBlueGreen:hover {
+	background: #21825B;
+}
+
+/* 3D */
+.btnBlueGreen.btnPush {
+	box-shadow: 0px 5px 0px 0px #007144;
+}
+
+.btnRed.btnPush {
+	box-shadow: 0px 5px 0px 0px #CD1F48;
+}
+
+.btnPush:hover {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.btnBlueGreen.btnPush:hover {
+	box-shadow: 0px 0px 0px 0px #007144;
+}
+
+.btnRed.btnPush:hover {
+	box-shadow: 0px 0px 0px 0px #CD1F48;
+}
+
+a.button {
+	display: block;
+	position: relative;
+	float: left;
+	width: 90px;
+	padding: 0;
+	margin: 0;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	color: #FFF;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+
+.buttonB {
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 35px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	border-radius: 15%
+}
+
+.buttonB:hover {
+	background-color: #2EE59D;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+}
+
+.tag1 {
+	font-size: 0.7em;
+	background-color: #B2B2B2;
+	padding: 1px 4px 1px 4px;
+	border-radius: 5px;
+	color: white;
+}
+
+.tag2 {
+	font-size: 0.9em;
+	background-color: #B2B2B2;
+	padding: 1px 4px 1px 4px;
+	border-radius: 5px;
+	color: white;
+}
+
+.category1 {
+	font-size: 0.7em;
+	background-color: #5BC0DE;
+	padding: 1px 4px 1px 4px;
+	border-radius: 5px;
+	color: white;
+}
+
+.category2 {
+	font-size: 0.9em;
+	background-color: #5BC0DE;
+	padding: 1px 4px 1px 4px;
+	border-radius: 5px;
+	color: white;
+}
+
+.listTitle1 {
+	font-size: 1em;
+	color: #23527C;
+}
+
+.listTitle2 {
+	font-size: 1em;
+	color: black;
+}
+
+.listMainWrap {
+	padding: 0;
+	margin: auto;
+	list-style: none;
+}
+
+.viewSubWrap {
+	border: 1px solid #999999;
+	margin-top: -1px;
+	background-color: white;
+}
+
+.viewSubWrap {
+	border: 1px solid #999999;
+	margin-top: -1px;
+	padding: 10px;
+	background-color: white;
+}
+
+.stauts {
+	text-align: left;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+}
+
+.listProfle {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+}
+
+.viewProfle {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+}
+</style>
+
+<title>viewPage6</title>
+</head>
+<body>
+	<div class="container-fluid" style="margin: 0; padding: 0;">
+		<div class="row">
+			<div class="col-lg-3 d-none d-xl-block d-lg-block">
+				<div id="wrap">
+					<div class="box menuBox">
+						<div>
+							<input type="text" id="search" class="search" size="20"
+								placeholder="검색">
+							<button type="button" id="searchBtn" class="search">검색</button>
+						</div>
+						<div id="login" class="join">로그인</div>
+						<div id="join" class="join">회원가입</div>
+						<ul>
+							<li>공지사항
+								<div class="box box3"></div>
+							</li>
+							<li>건의게시판
+								<div class="box box3"></div>
+							</li>
+							<li>질문게시판
+								<div class="box box3"></div>
+							</li>
+							<li>자유게시판
+								<div class="box box3"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="box box1">WITH</div>
+					<div class="box box2">US</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-12">
+				<br>
+				<nav class="listSize" style="padding: 0; margin: auto">
+					<div class="container" style="padding: 10px;">
+						<div class="row">
+							<div class="col-auto me-auto" style="font-size: 1.5em;">
+								질문게시판</div>
+							<div class="col-auto">
+								<a href="writePage.html" title="Button push blue/green"
+									class="button btnPush btnRed" style="margin-right:10px;">수정</a>
+								<a href="writePage.html" title="Button push blue/green"
+									class="button btnPush btnBlueGreen">작성</a>
+							</div>
+						</div>
+						<br>
+						<div class="row">
+							<div class="col-lg-7 col-md-7 me-auto col-12 align-self-end"
+								style="height: auto; font-size: 0.7em;">
+								
+							</div>
+							<div class="col-lg-5 col-md-5 col-12" style="height: auto;">
+								<form class="d-flex">
+									<input class="form-control" type="search" placeholder="Search"
+										aria-label="Search">
+									<button onclick="window.open('listPage.html')"  class="buttonB">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<br>
+				<ul class="listSize listMainWrap">
+					<li>
+						<div class="container">
+							<div class="row viewSubWrap">
+								<div class="col-8">
+									<table style="float: left;">
+										<tr>
+											<td rowspan="2"><img class="viewProfle"
+												src="//www.gravatar.com/avatar/FF02F28ACA6FE056672337E6E913DFCC?d=identicon&amp;s=30">
+											</td>
+											<td><a style="font-size: 100%;">&nbsp플로우&nbsp</a><span><i
+													class="fa-solid fa-2xs fa-bolt">&nbsp525</i></td>
+										</tr>
+										<tr>
+											<td style="font-size: 25%;">&nbsp22-06-17 01:51</td>
+										</tr>
+									</table>
+								</div>
+								<div class="col-4 align-self-center" style="text-align: right">
+									<i class="fa-solid fa-xs fa-comment">&nbsp1</i>&nbsp <i
+										class="fa-solid fa-xs fa-eye">&nbsp401</i>&nbsp
+								</div>
+							</div>
+							<div class="row viewSubWrap" style="border-bottom: none;">
+								<div class="col-lg-12 col-12" style="padding: 10px">
+									<span class="text-left" style="font-size: 1.1em; color: gray;">#1251974</span>
+									<a href="#" class="category2">Tips & 강좌</a> <a class="tag2"
+										href="#">layout</a> <a class="tag2" href="#">web.dev</a> <a
+										class="tag2" href="#">css</a> <a class="tag2" href="#">flex</a>
+									<a class="tag2" href="#">grid</a>
+									<p style="line-height: 0.5em;"></p>
+									<p style="line-height: 0.1em; font-size: 1.5em;">CSS
+										Layout의 역사</p>
+								</div>
+							</div>
+							<div class="row viewSubWrap">
+								<div class="col-lg-10 col-12">
+									<article class="content-text" itemprop="articleBody">
+										<p>
+											<img src="//file.okky.kr/images/1655397770132.PNG"
+												style="width: 100%">
+										</p>
+										<p>
+											(출처: 구글 web.dev,&nbsp;<a
+												href="https://web.dev/learn/css/layout/" rel="nofollow">https://web.dev/learn/css/layout/</a>
+											<a href="https://web.dev/learn/css/layout/" target="_blank"
+												title="새창으로 열기"><i class="fa fa-external-link"></i></a>)
+										</p>
+										<p>
+											<br>
+										</p>
+										<p>Flexbox가 2012년도에 나왔습니다.</p>
+										<p>그 전까지는 얼마나 배치하는게 힘들었을까요.</p>
+										<p>(야매가 아니라면) 센스있는 trick들에 의존했겠죠...</p>
+										<p>Flexbox 나오고 환호성이 나왔다고 하는데... 이해가 됩니다.</p>
+										<p>
+											<br>
+										</p>
+										<p>그리고 깡패 Grid가 나왔죠, one-dimensional에서 two-dimensional이라니,</p>
+										<p>그리고 2021년에는 Container queries까지 (잠깐봤는데&nbsp; ㅎㄷㄷ이더군요.)</p>
+										<p>
+											<br>
+										</p>
+										<p>개발이 점점 쉬워지고 있습니다. (물론 복잡해지는 부분도 있습니다.)</p>
+										<p>그런데 이렇게 쉬워지는데는 훌륭한 선배 개발자들이 저변을 넓혀줘서 그렇겠지요.</p>
+										<p>아무렇지 않게 쓰고 있지만, 리스펙을 보냅니다.</p>
+										<p>
+											<br>
+										</p>
+										<p>뉴턴이 한 말</p>
+										<p>
+											<b
+												style="color: rgb(32, 33, 34); font-family: sans-serif; animation-delay: !important; animation-duration: !important; animation-iteration-count: !important; scroll-behavior: !important; transition-duration: !important">
+												"standing on the shoulders of giants"</b>
+										</p>
+										<p>
+											<br>
+										</p>
+										<p>다시 한번 생각나는 밤이네요.</p>
+										<p>늦은시간 모듬회와 에반윌리엄스가또 뻘글을 쓰게 만들었네요.</p>
+										<p>
+											<br>
+										</p>
+										<p>즐거운 금요일입니다!</p>
+									</article>
+								</div>
+								<div class="col-lg-2 d-none d-xl-block align-self-center"
+									style="border-left: 1px solid; text-align: center;">
+									<i class="fa-solid fa-xl fa-thumbs-up fa-beat-fade">&nbsp6</i>&nbsp
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<br>
+				<ul class="listSize listMainWrap">
+					<li>
+						<div class="container">
+							<div class="row viewSubWrap align-self-center"
+								style="padding: 5px;; background-color: #d3d3d3;">&nbsp댓글</div>
+							<div class="row viewSubWrap">
+								<div class="col-lg-10 col-12">
+									<div class="row">
+										<table style="float: left;">
+											<tr>
+												<td rowspan="2" width="40px"><img class="viewProfle"
+													src="//www.gravatar.com/avatar/FF02F28ACA6FE056672337E6E913DFCC?d=identicon&amp;s=30">
+												</td>
+												<td><a style="font-size: 100%;">&nbsp플로우&nbsp</a><span><i
+														class="fa-solid fa-2xs fa-bolt">&nbsp525</i></td>
+											</tr>
+											<tr>
+												<td style="font-size: 25%;">&nbsp22-06-17 01:51</td>
+											</tr>
+										</table>
+									</div>
+									<div class="row" style="padding: 10px">
+										<article class="content-text" itemprop="articleBody">
+											<p>편해보이긴한데 가독성은 그닥 안좋은거 같아보이네요.</p>
+										</article>
+									</div>
+								</div>
+								<div class="col-lg-2 d-none d-xl-block align-self-center"
+									style="border-left: 1px solid; text-align: center;">
+									<i class="fa-solid fa-xl fa-thumbs-up">&nbsp3</i>&nbsp
+								</div>
+							</div>
+							<div class="row viewSubWrap">
+								<div class="col-lg-10 col-12">
+									<div class="row">
+										<table style="float: left;">
+											<tr>
+												<td rowspan="2" width="40px"><img class="viewProfle"
+													src="//file.okky.kr/profile/2021/1639580399210.png">
+												</td>
+												<td><a style="font-size: 100%;">&nbspkenu&nbsp</a><span><i
+														class="fa-solid fa-2xs fa-bolt">&nbsp62k</i></td>
+											</tr>
+											<tr>
+												<td style="font-size: 25%;">&nbsp22-06-17 01:51</td>
+											</tr>
+										</table>
+									</div>
+									<div class="row" style="padding: 10px">
+										<article class="content-text" itemprop="articleBody">
+											<p>해당 게시물은 관리자에 의해 사는얘기에서 Tips & 강좌로 이동 되었습니다.</p>
+										</article>
+									</div>
+								</div>
+								<div class="col-lg-2 d-none d-xl-block align-self-center"
+									style="border-left: 1px solid; text-align: center;">
+									<i class="fa-solid fa-xl fa-thumbs-up">&nbsp6</i>&nbsp
+								</div>
+								
+							</div>
+							<div class="row viewSubWrap">
+								<div class="col-lg-10 col-12">
+									<div class="row">
+										<table style="float: left;">
+											<tr>
+												<td rowspan="2" width="40px"><img class="viewProfle"
+													src="//file.okky.kr/profile/2021/1639580399210.png">
+												</td>
+												<td><a style="font-size: 100%;">&nbspkenu&nbsp</a><span><i
+														class="fa-solid fa-2xs fa-bolt">&nbsp62k</i></td>
+											</tr>
+											<tr>
+												<td style="font-size: 25%;">&nbsp22-06-17 01:51</td>
+											</tr>
+										</table>
+									</div>
+									<div class="row" style="padding: 10px">
+										<div class="input-group">
+										  <textarea class="form-control" aria-label="With textarea"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="col-auto ms-auto align-self-end"
+									style="margin-right:10px;">
+									<a href="" title="Button push blue/green"
+									class="button btnPush btnBlueGreen" style="margin-bottom:10px">등록</a>
+								</div>							
+							</div>
+						</div>
+					</li>
+				</ul>
+				<br> <br>
+				<div class="ms-auto d-none d-xl-block d-lg-block"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
