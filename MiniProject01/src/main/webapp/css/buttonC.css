@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* 폰트 레이아웃 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+}
+
+/* 버튼 레이아웃 */
+
+.btn-gradient {
+  margin: 5px;
+}
+
+/* Gradient buttons */
+.btn-gradient {
+  color: white;
+  padding: 10px 15px;
+  border: 1px solid rgba(0,0,0,0.21);
+  border-bottom: 4px solid rgba(0,0,0,0.21);
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* Gradient */
+.btn-gradient.cyan {
+  background: rgba(27,188,194,1);
+}
+
+.btn-gradient.cyan:active   {background: #169499;}
