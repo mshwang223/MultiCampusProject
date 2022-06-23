@@ -9,10 +9,10 @@
 		<link rel ="stylesheet" type="text/css" href="css/header.css">
 		<link rel ="stylesheet" type="text/css" href="css/section.css">
 		<link rel ="stylesheet" type="text/css" href="css/footer.css">
-		
+		<link rel ="stylesheet" type="text/css" href="css/slideShow.css">
 		<script src="jquery-3.6.0.min.js"></script>
 		<script src="https://kit.fontawesome.com/f499e7b799.js" crossorigin="anonymous"></script>
-	
+		<script src="js/tabMenu.js"></script>
 	</head>
 	
 	<body>
@@ -37,19 +37,40 @@
 		
 		<div id="container">
 			<div id="MenuBar">
-				<ul>
+				<ul id="tab">
 					<li><a href="#">공지 사항</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">자유 게시판</a></li>
 					<li><a href="#">Q&A</a></li>
 					<li><a href="#">건의사항</a></li>
 				</ul>
+				<div class="searchBox">
+					<div class="search">
+						<p class="searchFont">검색어를 입력하세요.</p>
+						<a href="#"><img src="image/search.png" class="searchIcon"></a>
+						</div> <!-- searchBox -->
+					</div> <!-- search -->
 			</div> <!-- MenuBar -->	
 		
 	<section>
-		<div class="banner">
-			<a href="#"><!--img src="image/logo.png">-->이미지 예시</a>
-		</div><!--  banner-->
+		<article  id="slideShow"> <!-- 슬라이드 쇼 -->   
+                <div id="slideShowBox">
+					<div id="slidePanel">
+						<img src= "image/image1.png" class="slideImage">
+						<img src= "image/image2.jpeg" class="slideImage">
+						<img src= "image/image3.jpeg" class="slideImage">
+						<img src= "image/image4.png" class="slideImage">
+						<img src= "image/image5.jpeg" class="slideImage">
+					</div>
+				</div> <!-- slideShowBox 끝 -->
+				<div id = "controlPanel">
+					<img src="image/controlButton1.png" class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton">
+				</div>
+                </article> 
 		
 		<div class = "wholeframe">
 			<div class = "frame1">
@@ -145,7 +166,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"><a>1k</a></i>
+								<i class="fa-solid fa-bolt"><a></a></i>
 								<p class="day">14일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->

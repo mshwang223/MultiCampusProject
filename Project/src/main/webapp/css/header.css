@@ -31,9 +31,11 @@ header { display:flex;
 		outline:14px solid #a5d4c0; 
 }
 /* MenuBar */
-#MenuBar { background :#a5d4c0; }
+#MenuBar { background :#a5d4c0; display:flex; }
 
-#MenuBar ul {height:40px; line-height:40px;}
+#MenuBar ul {height:40px; 
+		line-height:40px; 
+}
 
 #MenuBar ul li {
 	display:inline-block; 
@@ -45,5 +47,26 @@ header { display:flex;
 	font-weight:bold;
 }
 
+/* 검색창  */
+.searchBox {display:flex; 
+justify-content:space-between; 
+margin: 0 0 20px 650px;
+}
+
+.search { display:flex; 
+		background :#fff; 
+		align-items:center;
+}
+.searchIcon { width:50%; 
+		margin-left:10px;
+}
+
+.searchFont { color:#a5d4c0; 
+			font-size:14px; 
+			text-align:center; 
+			height:40px; 
+			line-height:40px;
+			margin-left:20px;
+}
 
 
