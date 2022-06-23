@@ -8,8 +8,9 @@
 .fontbox {display:flex; align-items:center;} 
 .fontbox h3 { font-weight:bold; font-size:16px; margin-left:10px;}
 
-/* 전체 레이아웃 구성 */
 
+
+/* 이미지 광고 */
 .banner {
 	margin:0 auto; width:720px; text-align:center; 
 	margin-top:50px; outline:1px solid red;
@@ -17,6 +18,8 @@
 .banner a {
 	height:100px; line-height:100px;
 }
+
+/* 전체 레이아웃 구성 */
 .wholeframe {
 	display:flex; margin-top:30px;
 	justify-content : spacebtween;
@@ -56,31 +59,54 @@
 	margin-bottom:30px;
 }
 
+/* 특수 기호 배치 */
 .fontbox i {
-		display:flex;
 		margin-left:350px;
 }
 
 .fontbox .QnA i {
-		display:flex;
 		margin-left:290px;
 }
 /*  개인 게시글 설정 */
 
+/* 좌측 바 컬러 읽었을 때 표시 : 그린 */
 .personal {
 	border-left:4px solid #a5d4c0;
 	outline:2px solid #bbc2c2;;
+	padding:10px;
 	display:flex;
-		padding:10px;
+	justify-content :space-between;
 	
 }
-
+/* 좌측 바 컬러 읽었을 때 표시 : 그레이 */
 .personalID { border-left:4px solid #bbc2c2;
 		outline:2px solid #bbc2c2;;
-		display:flex;
 		padding:10px;
+		display:flex;
+		justify-content:space-between;
 }
 
 
+.subMenu{
+	 display:flex; 
+}
+.userSub{
+	align-items:center;
+	display:flex;  
+	width:140px;
+}
 
-.nickname, .day { display:inline-block; font-size:12px;}
+.day { width:60px; 
+	text-align:right;
+}
+
+.nickname, .day { display:inline-block; font-size:12px; padding:3px;}
+
+
+
+
+
+/*	
+			<div class="subMenu"></div> <!-- subMenu-->
+			<div class="userSub"></div> <!-- userSub -->
+*/			
