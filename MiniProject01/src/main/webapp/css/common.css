@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+/* 폰트 레이아웃 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  margin: 0;
+	padding: 0;
+}
+
+@media ( min-width : 977.5px) {
+	.listSize {
+		width: 977.5px;
+	}
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -22,14 +38,4 @@ a:hover {
 	text-decoration: underline;
 }
 
-/**********/
-* {
-	margin: 0;
-	padding: 0;
-}
 
-@media ( min-width : 802px) {
-	.listSize {
-		width: 802px;
-	}
-}
