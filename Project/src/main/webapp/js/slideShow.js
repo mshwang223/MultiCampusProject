@@ -14,11 +14,11 @@ $(document).ready(function() {
 		movedIndex = index;
 		
 		// 슬라이드 이동
-		var moveLeft = -(index * 1280);		// 왼쪽으로 이동 거리
+		var moveLeft = -(index * 1200);		// 왼쪽으로 이동 거리
 		$('#slidePanel').animate({'left':moveLeft}, 'slow');
 	}
 	
-	// prev 버튼 클릭하면 앞으로 이동
+	/* // prev 버튼 클릭하면 앞으로 이동
 	$('#prevButton').on('click', function() {
 		// 현재 Index 위치 계산
 		if(movedIndex != 0)	// 첫 번째가 아니면
@@ -34,7 +34,7 @@ $(document).ready(function() {
 			movedIndex = movedIndex + 1;	// 오른쪽으로 한 칸 이동
 			
 		moveSlide(movedIndex);	// 실제 이동하는 함수 호출 (인덱스값 전달)	
-	});
+	}); */
 	
 	// 초기에 슬라이더 위치 랜덤하게 지정
 	var randomNumber = Math.floor(Math.random() * 5);
