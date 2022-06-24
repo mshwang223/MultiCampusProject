@@ -1,69 +1,68 @@
 @charset "UTF-8";
 
 /* section */
+body { background:#f8f9fa;; }
 
 /* 보드 이미지 글 정렬 */
 .imageFontBox { display:flex; }
-.imagebox {display:flex; flex-direction:column; }
+.imagebox {display:flex; flex-direction:column; margin-bottom:10px; }
 .fontbox {display:flex; align-items:center;} 
 .fontbox h3 { font-weight:bold; font-size:16px; margin-left:10px;}
 
-/* 이미지 광고 */
-.banner {
-	margin:0 auto; width:720px; text-align:center; 
-	margin-top:50px; outline:1px solid red;
-}
-.banner a {
-	height:100px; line-height:100px;
-}
-
 /* 전체 레이아웃 구성 */
-.wholeframe {
-	display:flex; margin-top:30px;
-	justify-content : spacebtween;
-	font-size:12px;
+.Mainframe {
+	display:flex;
+	margin-top:100px;
+	margin-left:40px; 
+	
 }
 
-.frame1, .frame3 {
+.frame1 {
 	display:flex;
 	flex-direction:column;
+	
+	margin-left:40px;
+	
 }
 
 
-.frame1 { width:300px;
-	margin-left:20px; 
+.frame2 { 
+		width:600px;
+		margin-left:80px;
+}
+
+.public { width:400px;
+}
+
+.QNA { margin-top:30px;
+	width:450px;
+}
+
+.freeboard {
+	width:560px;
 	margin-top:30px;
 }
 
-.WeeklyBest {
-	margin-top:50px;
+
+.WeeklyBest{
+	margin-top:30px;
+	width:480px;
 }
 
-.frame2 { 
-	margin-top:40px;
-	width:500px;
-	margin-left:30px;
-}
-
-
-.frame3 {
-	width:400px;
-	margin: 0 30px;
-	
-}
 
 .recruit {
 	margin-top:30px;
 	margin-bottom:30px;
+	width:400px;
 }
 
 /* 특수 기호 배치 */
 .fontbox i {
-		margin-left:350px;
+		margin-left:420px;
 }
 
 .fontbox .QnA i {
-		margin-left:290px;
+		margin-left:350px;
 }
 /*  개인 게시글 설정 */
 
@@ -99,6 +98,31 @@
 }
 
 /* 유저 닉네임, 게시물 게재한 시간 */
+.nickname { overflow:hidden; }
 .nickname, .day { display:inline-block; font-size:12px; padding:3px;}
 
 
+.advertise {
+	margin-top:20px;
+	display:flex;
+	
+}
+
+.adImage1 { width:100%;
+		margin-top:30px;
+}
+
+.adImage2{
+	flex-direction:row;
+	margin-right:30px;
+	margin-top:30px;
+	
+}
+
+.adImage3 {
+	margin-bottom:20px;
+}
+
+.adImgBox1 a:hover {opacity:0.5;}
+.adImgBox2 a:hover {opacity:0.5;}
+.adImgBox3 a:hover {opacity:0.5;}

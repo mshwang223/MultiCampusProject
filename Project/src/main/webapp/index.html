@@ -11,69 +11,94 @@
 		<link rel ="stylesheet" type="text/css" href="css/section.css">
 		<link rel ="stylesheet" type="text/css" href="css/footer.css">
 		<link rel ="stylesheet" type="text/css" href="css/slideShow.css">
+		<link rel ="stylesheet" type="text/css" href="css/bannerSlide.css">
 		<script src="https://kit.fontawesome.com/f499e7b799.js" crossorigin="anonymous"></script>
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/index.js"></script>
 		<script src="js/tabMenu.js"></script>
 		<script src="js/slideShow.js"></script>
+		<script src="js/bannerSlide.js"></script>
 	</head>
 	
 	<body>
-	<div id="wrapper">
+	
 		<header>
-			<div id = "headerBox">
-				<div id="logobox">
-					<h1 id="logo"><a href="index.html">		
-					<img src="image/logo-3.png" id="logoImage"></a></h1>
-				</div> <!-- logobox -->	
-				
-				<div id ="buttonbox">
-					<button id="join" class="btn-gradient cyan mini">회원 가입</button>
-					<button id="login"class="btn-gradient cyan mini">로그인</button>
-					<button id="master" class="btn-gradient cyan mini">관리자 계정</button>
-				</div> <!-- button -->
-				
-			</div> <!-- headerBox -->
-		</header>
-		
-		<div id="container">
+			<div id=menuTabBox>
 			<div id="menuTab">
+				<h1><a href="index.html"><img src="image/logo-3.png" id="logoImage"></a></h1>
 				<ul id="tab">
 					<li><a href="#">공지 사항</a></li>
 					<li><a href="#">News</a></li>
 					<li><a href="#">자유 게시판</a></li>
-					<li><a href="#">Q&A</a></li>
+					<li><a href="#">QnA</a></li>
 					<li><a href="#">건의사항</a></li>
 				</ul>
-				<div class="searchBox">
-					<div class="search">
-						<p class="searchFont">검색어를 입력하세요.</p>
-						<a href="#"><img src="image/search.png" class="searchIcon"></a>
-						</div> <!-- searchBox -->
-					</div> <!-- search -->
-			</div> <!-- menuTab -->	
+					<div class="searchBox">
+					<div class="searchButton">
+						<input type="text" id="search" value="Google 검색" size=15>
+						<div class="searchImg">
+							<a href="#"><img src="image/search.png" class="searchIcon"></a>
+						</div><!-- searchImg -->
+						</div> <!-- searchButton -->
+					</div> <!-- searchBox -->
+			</div> <!-- menuTab -->
+				<div id ="buttonbox">
+					<button id="join" class="btn-gradient cyan mini">회원 가입</button>
+					<button id="login"class="btn-gradient cyan mini">로그인</button>
+					<button id="master" class="btn-gradient cyan mini">관리자 계정</button>
+				</div> <!-- buttonbox -->
+		</div><!-- menuTabBox -->
+		</header>
+	<div id="wrapper">
+		
 	<section>
+	
 		<article  id="slideShow"> <!-- 슬라이드 쇼 -->   
-                <div id="slideShowBox">
-					<div id="slidePanel">
-						<img src= "image/image1.png" class="slideImage">
-						<img src= "image/image2.jpeg" class="slideImage">
-						<img src= "image/image3.jpeg" class="slideImage">
-						<img src= "image/image4.png" class="slideImage">
-						<img src= "image/image5.jpeg" class="slideImage">
-					</div>
-				</div> <!-- slideShowBox 끝 -->
-				<div id = "controlPanel">
+                <div id = "controlPanel">
 					<img src="image/controlButton1.png" class="controlButton">
-					<img src="image/controlButton1.png" class="controlButton">
-					<img src="image/controlButton1.png" class="controlButton">
-					<img src="image/controlButton1.png" class="controlButton">
+					<img src="image/controlButton2.png" class="controlButton">
+					<img src="image/controlButton3.png" class="controlButton">
+					<img src="image/controlButton4.png" class="controlButton">
 					<img src="image/controlButton1.png" class="controlButton">
 				</div>
-                </article> 
+                
+                <div id="slideShowBox">
+					<div id="slidePanel">
+						<a href="#"><img src= "image/image1.jpeg" class="slideImage"></a>
+						<a href="#"><img src= "image/image2.png" class="slideImage"></a>
+						<a href="#"><img src= "image/image3.jpeg" class="slideImage"></a>
+						<a href="#"><img src= "image/image4.jpeg" class="slideImage"></a>
+						<a href="#"><img src= "image/image5.jpeg" class="slideImage"></a>
+					</div>
+				</div> <!-- slideShowBox 끝 -->
+			
+                </article>   <!-- 게시판 컨트롤 버튼 -->
 		
-		<div class = "wholeframe">
-			<div class = "frame1">
+<!-- 배너 -->
+			<article id = "slideBanner">
+				<div id="prevNextButtonBox">
+					<img id="prevButton" src="image/prevButton.png">
+					<img id="nextButton" src="image/nextButton.png">
+				</div>
+				
+				<div id="bannerSlideBox">
+					<div id="bannerPanel">
+						<a href="#"><img src="image/banner1.png" class="bannerImage"></a>
+						<a href="#"><img src="image/banner2.png" class="bannerImage"></a>
+						<a href="#"><img src="image/banner3.jpeg" class="bannerImage"></a>					
+						<a href="#"><img src="image/banner4.png" class="bannerImage"></a>
+						<a href="#"><img src="image/banner5.jpeg" class="bannerImage"></a>
+					</div> <!-- "bannerPanel" -->
+				</div> <!-- bannerSlideBox -->
+			</article> <!-- slideBanner -->
+			
+			<div class="line"></div><!-- line -->
+<!-- 게시판 글 내용-->
+		
+		<div class="Mainframe">
+			<div class="frame1">
+				<div class="public">
+				
 				<div class="imageFontBox">
 					<div class="imagebox">
 						<h2><a href="#"><img src="image/notice.png"></a></h2>
@@ -84,7 +109,6 @@
 					 </div> <!-- fontbox -->
 				</div> <!--  imageFontBox-->
 				
-			<div class="public">
 				<div class="personal">
 					<a href="#">[OKKY 6월 세미나] 현장에서 바라는 개발자 커리어 관리 오프라인 진행</a>
 					<div class="subMenu">
@@ -136,407 +160,13 @@
 				</div> <!-- personal -->
 			</div> <!-- public -->
 			
-			<div class="WeeklyBest">
-				<div class="imageFontBox">
-					<div class="imagebox">
-						<h2><a href="#"><img src="image/best.png"></a></h2>
-					</div> <!--imagebox  -->
-					
-					<div class="fontbox">
-						<h3><a href="#">Weekly Best</a></h3>
-					</div><!--fontbox  -->
-				</div> <!-- imageFontBox -->
-							
-					<div class="personal">
-						<a href="#">기대를 전혀 하지 않았던 대기업으로 이직하게 됐습니다.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">주로 SI쪽에 계신 분들께 필요할 만한 걸 하나 만들어 봤습니다.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"><a></a></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">이제 막 개발에 입문한 병아리들을 위한 팁</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">"신입을 얼마 받아야 된다"는 이야기는 마케팅 용어입니다.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">choisangjong</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">(2차 나눔 및 홍보) 처음으로 전자책을 만들었습니다.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-					
-					
-					<div class="personal">
-						<a href="#">여러분의 응원 덕분에 구글에 합격했습니다.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-					
-					<div class="personal">
-						<a href="#">제가 제안하는 신입분들의 프로그래밍 공부법.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-					</div> <!-- WeeklyBest -->
-				</div> <!--  frame1 -->
-				
-				<div class="frame2">
-					<div class ="freeboard">
-					
-					<div class="imageFontBox">
-						<div class="imagebox">
-							<h2><a href="#"><img src="image/board.png"></a></h2>
-						</div> <!-- imagebox -->
-						
-						<div class="fontbox">
-							<h3><a href="#">자유 게시판</a></h3>
-							<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-						</div>	<!-- fontbox -->
-						
-					</div> <!-- imageFontBox -->
-				
-							
-					<div class="personal">
-						<a href="#">친구가 없어서 1인 개발했습니다.</a>
-						<div class="subMenu">
-							<div class="userSub">	
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personalID">
-						<a href="#">서울대입구역 작심스터디카페 매일 모각코</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-		
-				
-			
-					<div class="personal">
-						<a href="#">프론트엔드 면접 준비 인원 모집</a>
-							<div class="subMenu">
-								<div class="userSub">
-									<i class="fa-solid fa-circle-user"></i>
-									<p class ="nickname">닉네임</p>
-									<i class="fa-solid fa-bolt"></i>
-									<p class="day">14일전</p>
-								</div> <!-- userSub -->
-							</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">면접볼때 질문중에서요</a>
-						<div class="subMenu">
-							<div class="userSub">	
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-		
-					
-					<div class="personalID">
-						<a href="#">급해요ㅜㅜㅜㅜ 코테</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-				
-					
-					<div class="personal">
-						<a href="#">내가 겪어온 개발자 유형과 비율</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-				
-					
-					<div class="personal">
-						<a href="#">java spring 백엔드 지향 취준생입니다.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">안녕하십니까 개발자를 한 번 도전해보려고 합니다.</a>	
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personalID">
-						<a href="#">웹퍼블리셔 국비</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div>	<!-- personal -->
-				
-					
-					<div class="personal">
-						<a href="#">CSS , HTML 공부 범위 질문 드려용 ( 생활코딩강의 참조 )</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personalID">
-						<a href="#">대학교3학년 풀스택 개발자 준비방법 질문드립니다 고수님들!</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">군대에서 자료구조/알고리즘 공부</a>
-						<div class="subMenu">
-							<div class="userSub">		
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-								</div> <!-- userSub -->
-							</div> <!-- subMenu-->
-					</div> <!-- personal -->
-		
-					
-					<div class="personal">
-						<a href="#">최종 합격하고 회사에게 생각할 시간을 달라고 하면 안 좋게 볼까요?</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					<div class="personalID">
-						<a href="#">Django Application Web Latency 측정 Middleware 작성이라는 주제로 코딩테스트를 준비중인데, 무엇인지 감이 안옵니다 !</a>
-						<div class="subMenu">
-							<div class ="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> 
-						</div>
-					</div> <!-- personal -->
-		
-					
-					<div class="personal">
-						<a href="#">si 파견직 할만 한가요?</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">코딩테스트(JAVASCRIPT사용) 정기 스터디 모집합니다.</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">점점 개발 언어도 다양화 되는듯...</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">코딩테스트를 준비하려는 국비취준생인데 어떤 언어로 시작하는 게 좋을까요?</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">현업에서 프론트와 백엔드는 어떤 방식으로 업무를 하나요?</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personalID">
-						<a href="#">커뮤니티를 활성화하려면 어떻게 해야 될까?</a>
-						
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-			
-					
-					<div class="personal">
-						<a href="#">야 나 개발자나 해볼까?</a>
-						<div class="subMenu">
-							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
-							</div> <!-- userSub -->
-						</div> <!-- subMenu-->
-					</div> <!-- personal -->
-					</div> <!-- "freeboard" -->
-				</div> <!--  frame2 -->
-				
-				
-				<div class = "frame3">
-					<div class ="imageFontBox">
+			<div class ="QNA">
+				<div class ="imageFontBox">
 						<div class="imagebox">
 							<h2><a href="#"><img src="image/Q&A.png"></a></h2>
 						</div> <!-- imagebox -->
 						<div class="fontbox">
-							<h3><a href="#">Q&A</a></h3>
+							<h3><a href="#">QnA</a></h3>
 							<a href="#" class="QnA"><i class="fa-solid fa-ellipsis-vertical"></i></a>
 						</div> <!-- fontbox -->
 					</div> <!--imageFontBox -->
@@ -683,72 +313,9 @@
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
+			</div> <!-- QNA -->
 		
-				
-				<div class="personalID">
-					<a href="#">react axios nodejs</a>
-					<div class="subMenu">
-						<div class="userSub">
-							<i class="fa-solid fa-circle-user"></i>
-							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
-						</div> <!-- userSub -->
-					</div> <!-- subMenu-->
-				</div> <!-- personal -->
-		
-				
-				<div class="personal">
-					<a href="#">인텔리제이에서 타임리프 사용 질문 있습니다.(자동완성)</a>
-					<div class="subMenu">
-						<div class="userSub">
-							<i class="fa-solid fa-circle-user"></i>
-							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
-						</div> <!-- userSub -->
-					</div> <!-- subMenu-->
-				</div> <!-- personal -->
-		
-				
-				<div class="personal">
-					<a href="#">m1 맥북에어 VScode git merge tool을 사용하기 위한 여정</a>
-					<div class="subMenu">
-						<div class="userSub">
-							<i class="fa-solid fa-circle-user"></i>
-							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
-						</div> <!-- userSub -->
-					</div> <!-- subMenu-->
-				</div> <!-- personal -->
-		
-				
-				<div class="personal">
-					<a href="#">이클립스 Resin 서버 오류 질문</a>
-					<div class="subMenu">
-						<div class="userSub">
-							<i class="fa-solid fa-circle-user"></i>
-							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
-						</div> <!-- userSub -->
-					</div> <!-- subMenu-->
-				</div> <!-- personal -->
-		
-				
-				<div class="personal">
-					<a href="#">C++ 이동 시맨틱 질문입니다.</a>
-					<div class="subMenu">
-						<div class="userSub">
-							<i class="fa-solid fa-circle-user"></i>
-							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
-						</div> <!-- userSub -->
-					</div> <!-- subMenu-->
-				</div> <!-- personal -->
-	
+			<!-- 공고 -->
 			<div class="recruit">
 				<div class="imageFontBox">
 					<div class="imagebox">
@@ -808,33 +375,265 @@
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
-					
 				</div> <!--recruit  -->			
-			</div> <!-- frame3 -->
-		</div> <!-- wholeframe -->
+			
+		</div> <!-- frame1 -->
+					
+					
+			
+<!-- frame2 -->		
+				<div class="frame2">
+						<!-- Weekly Best -->
+			<div class="WeeklyBest">
+				<div class="imageFontBox">
+					<div class="imagebox">
+						<h2><a href="#"><img src="image/best.png"></a></h2>
+					</div> <!--imagebox  -->
+					
+					<div class="fontbox">
+						<h3><a href="#">Weekly Best</a></h3>
+					</div><!--fontbox  -->
+				</div> <!-- imageFontBox -->
+							
+					<div class="personal">
+						<a href="#">기대를 전혀 하지 않았던 대기업으로 이직하게 됐습니다.</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+					<div class="personal">
+						<a href="#">주로 SI쪽에 계신 분들께 필요할 만한 걸 하나 만들어 봤습니다.</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"><a></a></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+					<div class="personal">
+						<a href="#">이제 막 개발에 입문한 병아리들을 위한 팁</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+					<div class="personal">
+						<a href="#">"신입을 얼마 받아야 된다"는 이야기는 마케팅 용어입니다.</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">choisangjong</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+				</div> <!-- WeeklyBest -->
+					
+				
+<!-- 자유 게시판 -->
+				<div class ="freeboard">
+					<div class="imageFontBox">
+						<div class="imagebox">
+							<h2><a href="#"><img src="image/board.png"></a></h2>
+						</div> <!-- imagebox -->
+						
+						<div class="fontbox">
+							<h3><a href="#">자유 게시판</a></h3>
+							<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+						</div> <!-- fontbox -->
+					</div>  <!-- imageFontBox -->
+							
+					<div class="personal">
+						<a href="#">친구가 없어서 1인 개발했습니다.</a>
+						<div class="subMenu">
+							<div class="userSub">	
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+					<div class="personalID">
+						<a href="#">서울대입구역 작심스터디카페 매일 모각코</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+		
+				
+			
+					<div class="personal">
+						<a href="#">프론트엔드 면접 준비 인원 모집</a>
+							<div class="subMenu">
+								<div class="userSub">
+									<i class="fa-solid fa-circle-user"></i>
+									<p class ="nickname">닉네임</p>
+									<i class="fa-solid fa-bolt"></i>
+									<p class="day">14일전</p>
+								</div> <!-- userSub -->
+							</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+					<div class="personal">
+						<a href="#">면접볼때 질문중에서요</a>
+						<div class="subMenu">
+							<div class="userSub">	
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+		
+					
+					<div class="personalID">
+						<a href="#">급해요ㅜㅜㅜㅜ 코테</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+				
+					
+					<div class="personal">
+						<a href="#">내가 겪어온 개발자 유형과 비율</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+				
+					
+					<div class="personal">
+						<a href="#">java spring 백엔드 지향 취준생입니다.</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+					<div class="personal">
+						<a href="#">안녕하십니까 개발자를 한 번 도전해보려고 합니다.</a>	
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+			
+					
+					<div class="personalID">
+						<a href="#">웹퍼블리셔 국비</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div>	<!-- personal -->
+				
+					
+					<div class="personal">
+						<a href="#">CSS , HTML 공부 범위 질문 드려용 ( 생활코딩강의 참조 )</a>
+						<div class="subMenu">
+							<div class="userSub">
+								<i class="fa-solid fa-circle-user"></i>
+								<p class ="nickname">닉네임</p>
+								<i class="fa-solid fa-bolt"></i>
+								<p class="day">14일전</p>
+							</div> <!-- userSub -->
+						</div> <!-- subMenu-->
+					</div> <!-- personal -->
+				</div> <!-- "freeboard" -->
+					
+			<div class="adImgBox1">
+				<a href="#"><img class="adImage1" src="image/adImage1.png"></a>
+			</div> <!--adImgBox1 -->	
+				
+				<div class="advertise">
+					<div class="adImgBox2">
+						<a href="#"><img class="adImage2" src="image/adImage2.png"></a>
+					</div> <!-- adImgBox -->
+					
+					<div class="adImgBox3">
+						<a href="#"><img class="adImage3" src="image/adImage3.jpeg"></a>
+					</div> <!-- adImgBox -->
+				</div> <!--advertise  -->
+			
+				
+				</div> <!-- frame2 -->
+			</div> <!-- Mainframe -->
+			
+			
 		</section>
-		<footer>
-			<ul>
-				<li><a href="#">About 위더스 |</a></li>
-				<li><a href="#">개인정보보호 |</a></li>
-				<li><a href="#">광고 문의 |</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">Github v1.5 .4</a></li>
-			</ul>
-			
-			<ul>
-				<li><a href="#">상호명 |</a></li>
-				<li><a href="#">대표명 |</a></li>
-				<li><a href="#">사업자 등록번호 |</a></li>
-				<li><a href="#">문의 |</a></li>
-			</ul>
-			<ul>
-				<li>주소 : </li>
-				<li>서울특별시 강남구 언주로 508</li>
-			</ul>
-			
-		</footer>	
-			</div> <!-- container -->		
+			<footer>
+				<ul>
+					<li><a href="#">About 위더스 |</a></li>
+					<li><a href="#">개인정보보호 |</a></li>
+					<li><a href="#">광고 문의 |</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Github v1.5 .4</a></li>
+				</ul>
+				
+				<ul>
+					<li><a href="#">상호명 |</a></li>
+					<li><a href="#">대표명 |</a></li>
+					<li><a href="#">사업자 등록번호 |</a></li>
+					<li><a href="#">문의 |</a></li>
+				</ul>
+				<ul>
+					<li>주소 : </li>
+					<li>서울특별시 강남구 언주로 508</li>
+				</ul>
+			</footer>		
 		</div> <!-- wrapper  -->
 	</body>
 </html>

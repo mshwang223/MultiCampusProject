@@ -6,10 +6,10 @@
 	// 윈도우 스크롤 시 메인 메뉴 고정
 	$(window).on('scroll', function(){
 		// 스크롤되는 문서의 top이 #headerBox 이상이면 메인 메뉴 고정되고 그림자 표시 
-		if($(document).scrollTop() >= $('#headerBox').height()){
-			$('#menuTab').addClass('menuTabFixed menuTabShadow');
+		if($(document).scrollTop() >= $('#menuTabBox').height()){
+			$('#menuTabBox').addClass('menuTabBoxFixed menuTabBoxShadow');
 		} else {
-			$('#menuTab').removeClass('menuTabFixed menuTabShadow');
+			$('#menuTabBox').removeClass('menuTabBoxFixed menuTabBoxShadow');
 		}	
 	});
 	

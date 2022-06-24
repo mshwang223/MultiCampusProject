@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /* footer  */
-footer { background:#bbc2c2; margin-top:10px;}
-footer ul { padding:7px;  margin-left:10px; }
-footer ul li { display:inline-block; color:#fff;}
-footer ul li a {color : #fff;}
-footer p {color : #fff; }
+footer { border-top:1px solid #bbc2c2; width:1280px;}
+footer ul { padding:7px;  margin-left:10px;  margin-top:10px;}
+footer ul li { display:inline-block; color:#000;}
+footer ul li a {color : #000;}
+footer p {color : #000; }
 
