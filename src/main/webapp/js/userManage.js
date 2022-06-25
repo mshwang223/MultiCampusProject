@@ -68,13 +68,13 @@ $(document).on("click", ".editable", function() {
 function chkUser(index, name) {
 	if (index === "abc1001" && name === "홍길동")
 		inputTmpData("abc1001", "홍길동", "2021", "7", "24", "1",
-			"011", "3574", "3478", "3", "sdlhf035", "gmail", "1", "1");
+			"011", "3574", "3478", "sdlhf035", "gmail", "1", "1");
 	else if (index === "abc1002" && name === "이몽룡")
 		inputTmpData("abc1002", "이몽룡", "2022", "1", "10", "2",
-			"010", "4453", "0075", "2", "dafj1105", "naver", "2", "2");
+			"010", "4453", "0075", "dafj1105", "naver", "2", "2");
 	else
 		inputTmpData("abc1003", "성춘향", "2022", "5", "3", "2",
-			"019", "6925", "8542", "4", "dfg6839", "hanmail", "1", "2");
+			"019", "6925", "8542", "dfg6839", "hanmail", "1", "2");
 }
 
 function inputTmpData(id, name, birthYear, birthMonth, birthDay, solar,
