@@ -13,27 +13,32 @@
 		<link rel ="stylesheet" type="text/css" href="css/footer.css">
 		<link rel ="stylesheet" type="text/css" href="css/slideShow.css">
 		<link rel ="stylesheet" type="text/css" href="css/bannerSlide.css">
+		<link rel ="stylesheet" type="text/css" href="css/moveButton.css">
+		
 		<script src="https://kit.fontawesome.com/f499e7b799.js" crossorigin="anonymous"></script>
 		<script src="js/jquery-3.6.0.min.js"></script>
-		<script src="js/index.js"></script>
-		<script src="js/tabMenu.js"></script>
+		<script src="js/scroll.js"></script>
 		<script src="js/slideShow.js"></script>
 		<script src="js/bannerSlide.js"></script>
+		<!-- <script src="js/index.js"></script> 
+		<script src="js/join.js"></script>
+		<script src="js/login.js"></script>  -->
 	</head>
 	
 	<body>
 	
+	<div id="wrapper">
 		<header>
 			<div id=menuTabBox>
 			<div id="wholeMenuFrame">
 				<div id="menuFrame1">
 					<div id="menuTab">
-						<h1><a href="index.html"><img src="image/logo-3.png" id="logoImage"></a></h1>
+						<h1><a href="index.html"><img src="image/logo.png" id="logoImage"></a></h1>
 						<ul id="tab">
 							<li><a href="#">공지 사항</a></li>
-							<li><a href="#">News</a></li>
-							<li><a href="#">자유 게시판</a></li>
-							<li><a href="#">QnA</a></li>
+							<li><a href="#">새 소식</a></li>
+							<li><a href="#">커뮤니티</a></li>
+							<li><a href="#">질문 게시판</a></li>
 							<li><a href="#">건의사항</a></li>
 						</ul>
 				</div> <!-- menuTab -->
@@ -44,7 +49,7 @@
 						<div class="searchButton">
 							<input type="text" id="search" value="Google 검색" size=15>
 							<div class="searchImg">
-								<a href="#"><img src="image/search.png" class="searchIcon"></a>
+								<a href="#"><img src="image/SearchBox.png" class="searchIcon"></a>
 							</div><!-- searchImg -->
 							</div> <!-- searchButton -->
 						</div> <!-- searchBox -->
@@ -55,35 +60,41 @@
 						<button id="join" class="btn-gradient cyan mini">회원 가입</button>
 						<button id="login"class="btn-gradient cyan mini">로그인</button>
 						<button id="master" class="btn-gradient cyan mini">관리자 계정</button>
+						<button id="myPage" class="btn-gradient cyan mini">마이페이지</button>
+						<button id="admin" class="btn-gradient cyan mini">사용자관리</button>
 					</div> <!-- buttonbox -->
 				</div> <!-- menuFrame3 -->	
 			</div> <!-- wholeMenuFrame -->
 		</div><!-- menuTabBox -->
 		</header>
-	<div id="wrapper">
+	<div id="container">
 		
 	<section>
-	
 		<article  id="slideShow"> <!-- 슬라이드 쇼 -->   
                 <div id = "controlPanel">
 					<img src="image/controlButton1.png" class="controlButton">
-					<img src="image/controlButton2.png" class="controlButton">
-					<img src="image/controlButton3.png" class="controlButton">
-					<img src="image/controlButton4.png" class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton">
+					<img src="image/controlButton1.png" class="controlButton">
 					<img src="image/controlButton1.png" class="controlButton">
 				</div>
                 
                 <div id="slideShowBox">
 					<div id="slidePanel">
-						<a href="#"><img src= "image/image1.jpeg" class="slideImage"></a>
-						<a href="#"><img src= "image/image2.png" class="slideImage"></a>
-						<a href="#"><img src= "image/image3.jpeg" class="slideImage"></a>
-						<a href="#"><img src= "image/image4.jpeg" class="slideImage"></a>
-						<a href="#"><img src= "image/image5.jpeg" class="slideImage"></a>
+						<a href="#"><img src= "image/slideImage1.jpeg" class="slideImage"></a>
+						<a href="#"><img src= "image/slideImage2.png" class="slideImage"></a>
+						<a href="#"><img src= "image/slideImage3.jpeg" class="slideImage"></a>
+						<a href="#"><img src= "image/slideImage4.jpeg" class="slideImage"></a>
+						<a href="#"><img src= "image/slideImage5.jpeg" class="slideImage"></a>
 					</div>
 				</div> <!-- slideShowBox 끝 -->
 			
-                </article>   <!-- 게시판 컨트롤 버튼 -->
+             </article>   <!-- 게시판 컨트롤 버튼 -->
+               
+              <div id="moveButtonBox">
+					<div id="moveToTopBox"><img src="image/topButton.png" id="moveToTop"></div>
+					<div id="moveToBottomBox"><img src="image/botButton.png" id="moveToBottom"></div>
+				</div><!--moveButtonBox  -->	 
 		
 <!-- 배너 -->
 			<article id = "slideBanner">
@@ -94,11 +105,11 @@
 				
 				<div id="bannerSlideBox">
 					<div id="bannerPanel">
-						<a href="#"><img src="image/banner1.png" class="bannerImage"></a>
-						<a href="#"><img src="image/banner2.png" class="bannerImage"></a>
-						<a href="#"><img src="image/banner3.jpeg" class="bannerImage"></a>					
-						<a href="#"><img src="image/banner4.png" class="bannerImage"></a>
-						<a href="#"><img src="image/banner5.jpeg" class="bannerImage"></a>
+						<a href="#"><img src="image/bannerImage1.png" class="bannerImage"></a>
+						<a href="#"><img src="image/bannerImage2.png" class="bannerImage"></a>
+						<a href="#"><img src="image/bannerImage3.jpeg" class="bannerImage"></a>					
+						<a href="#"><img src="image/bannerImage4.png" class="bannerImage"></a>
+						<a href="#"><img src="image/bannerImage5.jpeg" class="bannerImage"></a>
 					</div> <!-- "bannerPanel" -->
 				</div> <!-- bannerSlideBox -->
 			</article> <!-- slideBanner -->
@@ -112,7 +123,7 @@
 				
 				<div class="imageFontBox">
 					<div class="imagebox">
-						<h2><a href="#"><img src="image/notice.png"></a></h2>
+						<h2><a href="#"><img src="image/menuNotice.png"></a></h2>
 					</div> <!-- imagebox -->	
 					
 					<div class="fontbox">
@@ -125,9 +136,9 @@
 					<div class="subMenu">
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
-							<p class ="nickname">닉네임</p>
+							<p class ="nickname">admin</p>
 							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">3시간전</p>
 						</div> <!-- userSub -->
 					</div><!-- subMenu -->
 				</div> <!-- personal -->
@@ -138,9 +149,9 @@
 					<div class="subMenu">
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
-							<p class ="nickname">닉네임</p>
+							<p class ="nickname">admin</p>
 							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">21시간전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu -->
 				</div> <!-- personal -->
@@ -150,7 +161,7 @@
 						<div class="subMenu">
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
+								<p class ="nickname">admin</p>
 								<i class="fa-solid fa-bolt"></i>
 								<p class="day">14일전</p>
 						</div> <!-- userSub -->
@@ -163,9 +174,9 @@
 						<div class="subMenu">
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
+								<p class ="nickname">admin</p>
 								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">21일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -174,7 +185,7 @@
 			<div class ="QNA">
 				<div class ="imageFontBox">
 						<div class="imagebox">
-							<h2><a href="#"><img src="image/Q&A.png"></a></h2>
+							<h2><a href="#"><img src="image/menuQnA.png"></a></h2>
 						</div> <!-- imagebox -->
 						<div class="fontbox">
 							<h3><a href="#">QnA</a></h3>
@@ -188,8 +199,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">5분전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -201,8 +211,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">11분전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -214,8 +223,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">23분전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -227,8 +235,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">32분전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -240,8 +247,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">50분전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -254,8 +260,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">1시간전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -267,8 +272,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">1시간전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -280,8 +284,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">1시간전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -293,8 +296,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">2시간전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -306,8 +308,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">2시간전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -319,8 +320,7 @@
 						<div class="userSub">
 							<i class="fa-solid fa-circle-user"></i>
 							<p class ="nickname">닉네임</p>
-							<i class="fa-solid fa-bolt"></i>
-							<p class="day">14일전</p>
+							<p class="day">3시간전</p>
 						</div> <!-- userSub -->
 					</div> <!-- subMenu-->
 				</div> <!-- personal -->
@@ -330,7 +330,7 @@
 			<div class="recruit">
 				<div class="imageFontBox">
 					<div class="imagebox">
-						<h2><a href="#"><img src="image/recruit.png"></a></h2>
+						<h2><a href="#"><img src="image/menuRecruit.png"></a></h2>
 					</div><!-- imagebox -->
 					<div class="fontbox">
 						<h3><a href="#">공고</a></h3>
@@ -345,8 +345,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">2일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -357,8 +356,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">5일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -369,8 +367,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">7일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -381,7 +378,6 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
 								<p class="day">14일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
@@ -398,7 +394,7 @@
 			<div class="WeeklyBest">
 				<div class="imageFontBox">
 					<div class="imagebox">
-						<h2><a href="#"><img src="image/best.png"></a></h2>
+						<h2><a href="#"><img src="image/menuBest.png"></a></h2>
 					</div> <!--imagebox  -->
 					
 					<div class="fontbox">
@@ -412,8 +408,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">1일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -423,10 +418,9 @@
 						<a href="#">주로 SI쪽에 계신 분들께 필요할 만한 걸 하나 만들어 봤습니다.</a>
 						<div class="subMenu">
 							<div class="userSub">
-								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"><a></a></i>
-								<p class="day">14일전</p>
+									<i class="fa-solid fa-circle-user"></i>
+									<p class ="nickname">닉네임</p>
+									<p class="day">3일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -438,8 +432,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">5일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -450,9 +443,8 @@
 						<div class="subMenu">
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
-								<p class ="nickname">choisangjong</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class ="nickname">닉네임</p>
+								<p class="day">7일전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -465,7 +457,7 @@
 				<div class ="freeboard">
 					<div class="imageFontBox">
 						<div class="imagebox">
-							<h2><a href="#"><img src="image/board.png"></a></h2>
+							<h2><a href="#"><img src="image/menuBoard.png"></a></h2>
 						</div> <!-- imagebox -->
 						
 						<div class="fontbox">
@@ -480,8 +472,7 @@
 							<div class="userSub">	
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">5분전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -493,8 +484,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">10분전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -507,8 +497,7 @@
 								<div class="userSub">
 									<i class="fa-solid fa-circle-user"></i>
 									<p class ="nickname">닉네임</p>
-									<i class="fa-solid fa-bolt"></i>
-									<p class="day">14일전</p>
+									<p class="day">21분전</p>
 								</div> <!-- userSub -->
 							</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -520,8 +509,7 @@
 							<div class="userSub">	
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">27분전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -533,8 +521,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">35분전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -546,8 +533,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">50분전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -559,8 +545,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">1시간전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -572,8 +557,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">1시간전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -585,8 +569,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">1시간전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div>	<!-- personal -->
@@ -598,8 +581,7 @@
 							<div class="userSub">
 								<i class="fa-solid fa-circle-user"></i>
 								<p class ="nickname">닉네임</p>
-								<i class="fa-solid fa-bolt"></i>
-								<p class="day">14일전</p>
+								<p class="day">2시간전</p>
 							</div> <!-- userSub -->
 						</div> <!-- subMenu-->
 					</div> <!-- personal -->
@@ -635,17 +617,19 @@
 				</ul>
 				
 				<ul>
-					<li><a href="#">상호명 |</a></li>
+					<li><a href="#">상호명 | 위더스 |</a></li>
 					<li><a href="#">대표명 |</a></li>
 					<li><a href="#">사업자 등록번호 |</a></li>
-					<li><a href="#">문의 |</a></li>
+					<li><a href="#">문의</a></li>
 				</ul>
 				<ul>
 					<li>주소 : </li>
 					<li>서울특별시 강남구 언주로 508</li>
 				</ul>
+				
 			</footer>		
-		</div> <!-- wrapper  -->
+		</div> <!-- container  -->
+		</div><!-- wrapper -->
 	</body>
 </html>
 

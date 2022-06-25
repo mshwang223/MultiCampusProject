@@ -3,18 +3,25 @@
 
 /* header */
 /* 전체 폭 설정 */
-#wrapper {margin :0 auto; width:1280px; font-size:14px; }
+#wrapper { margin:0 auto; max-width:100%;}
+#container {margin :0 auto; width:1280px; font-size:14px; }
 
 
-header { background:#a5d4c0; position:fixed; z-index:10; width:100%;}
+#menuTabBox { background:#a5d4c0; 
+	position:fixed; 
+	z-index:10; 
+	width:100%;
+}
 
 #wholeMenuFrame {
 	justify-content:space-between;
 	display:flex;
 	align-items:center;
+	
 }
 
 #menuFrame1 { display:flex;
+	
 	
 }
 #menuFrame2 { display:flex; 
@@ -23,21 +30,16 @@ header { background:#a5d4c0; position:fixed; z-index:10; width:100%;}
 
 #menuFrame3 {
 	display:flex;
+	
 }
 
 /* header 로고, 버튼 정렬 */
-
-/* #menuTabBox { 
-	display:flex;
-	justify-content:space-between;
-	
-} */
-
 
 #menuTab { 
 	display:flex;
 	align-items:center;
 	padding:20px;
+	
 	
 }
 
@@ -47,10 +49,13 @@ header { background:#a5d4c0; position:fixed; z-index:10; width:100%;}
 #menuTab ul {height:40px; 
 		line-height:40px;
 		margin-left:10px;
+		
+		
 }
 
 #menuTab ul li {
 	display:inline-block;
+	
 	
 }
 #menuTab ul li a {color:#fff; 
@@ -59,9 +64,12 @@ header { background:#a5d4c0; position:fixed; z-index:10; width:100%;}
 	font-weight:bold;
 	margin-left:5px;
 	
+	
+	
 }
 #menuTab ul li a:hover { color:rgba(27,188,194,1); background:#fff; 
 	text-decoration:underline;
+	
 }
 /* 검색창  */
 
@@ -69,13 +77,15 @@ header { background:#a5d4c0; position:fixed; z-index:10; width:100%;}
 	justify-content:space-between; 
 	background:#fff;
 	margin-right:230px;
+	
 }
 
 .searchButton { display:flex; 
 		align-items:center;
-		width:200px;
+		width:200%;
 }
-.searchIcon { width:50%; 
+.searchIcon { 
+		width:50%; 
 		margin-top:5px;
 		margin-left:10px;
 }
@@ -87,7 +97,8 @@ header { background:#a5d4c0; position:fixed; z-index:10; width:100%;}
 #buttonbox {
 	margin:20px 40px 20px 0;
 	align-items:center;
+
 }
 
 /* 마스터 계정 로그인시 display 설정 평소엔 none */
-#buttonbox #master {display:none; } 
+#buttonbox #master,  #admin, #myPage{display:none;} 
