@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 		<title>With:us - All That Developer</title>
 		<link href="image/logo.png" rel="shortcut icon" type="image/x-icon">
 		<link rel ="stylesheet" type="text/css" href="css/reset.css">
@@ -24,29 +25,39 @@
 	
 		<header>
 			<div id=menuTabBox>
-			<div id="menuTab">
-				<h1><a href="index.html"><img src="image/logo-3.png" id="logoImage"></a></h1>
-				<ul id="tab">
-					<li><a href="#">공지 사항</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">자유 게시판</a></li>
-					<li><a href="#">QnA</a></li>
-					<li><a href="#">건의사항</a></li>
-				</ul>
+			<div id="wholeMenuFrame">
+				<div id="menuFrame1">
+					<div id="menuTab">
+						<h1><a href="index.html"><img src="image/logo-3.png" id="logoImage"></a></h1>
+						<ul id="tab">
+							<li><a href="#">공지 사항</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">자유 게시판</a></li>
+							<li><a href="#">QnA</a></li>
+							<li><a href="#">건의사항</a></li>
+						</ul>
+				</div> <!-- menuTab -->
+			</div> <!--menuFrame1  -->
+			
+				<div id="menuFrmae2">
 					<div class="searchBox">
-					<div class="searchButton">
-						<input type="text" id="search" value="Google 검색" size=15>
-						<div class="searchImg">
-							<a href="#"><img src="image/search.png" class="searchIcon"></a>
-						</div><!-- searchImg -->
-						</div> <!-- searchButton -->
-					</div> <!-- searchBox -->
-			</div> <!-- menuTab -->
-				<div id ="buttonbox">
-					<button id="join" class="btn-gradient cyan mini">회원 가입</button>
-					<button id="login"class="btn-gradient cyan mini">로그인</button>
-					<button id="master" class="btn-gradient cyan mini">관리자 계정</button>
-				</div> <!-- buttonbox -->
+						<div class="searchButton">
+							<input type="text" id="search" value="Google 검색" size=15>
+							<div class="searchImg">
+								<a href="#"><img src="image/search.png" class="searchIcon"></a>
+							</div><!-- searchImg -->
+							</div> <!-- searchButton -->
+						</div> <!-- searchBox -->
+				</div> <!--menuFrmae2  -->
+				
+				<div id="menuFrame3">
+					<div id ="buttonbox">
+						<button id="join" class="btn-gradient cyan mini">회원 가입</button>
+						<button id="login"class="btn-gradient cyan mini">로그인</button>
+						<button id="master" class="btn-gradient cyan mini">관리자 계정</button>
+					</div> <!-- buttonbox -->
+				</div> <!-- menuFrame3 -->	
+			</div> <!-- wholeMenuFrame -->
 		</div><!-- menuTabBox -->
 		</header>
 	<div id="wrapper">

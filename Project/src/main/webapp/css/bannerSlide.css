@@ -11,19 +11,19 @@
 	max-height:100px;
 	line-height:100px;
 	margin-bottom:30px;
-	position:relative;
 	top:100px;
+	
+
 }
 
 
 #bannerSlideBox {
-
 	margin-top:30px;
 	margin-left:240px;
-	width:800px;
-	height:1000px;
+	height:100px;
 	text-align:center;
 	overflow:hidden;
+	width:800px;
 	
 
 }
@@ -31,7 +31,7 @@
 #bannerPanel {
 	position:relative;
 	width:4000px; /* 이미지5개 옆으로 나란히 */
-	max-height:1000px;
+	max-height:100px;
 	text-align:center;
 	
 }
@@ -45,9 +45,24 @@
 
 
 /* 버튼 */
-#prevNextButtonBox { position:relative; z-index:10;}
-#prevButton {width:2%; position:absolute; top:43px; left:20%; opacity:0.8; cursor:pointer;}
-#nextButton {width:2%; position:absolute; top:43px; right:20%; opacity:0.8; cursor:pointer;}
+#prevNextButtonBox { position:relative; z-index:9;}
+#prevButton {width:2%; 
+				position:absolute; 
+				top:43px; 
+				left:20%; 
+				opacity:0.8; 
+				cursor:pointer; 
+				
+}
+#nextButton {
+	width:2%; 
+	position:absolute; 
+	top:43px; 
+	right:20%; 
+	opacity:0.8; 
+	cursor:pointer;
+	
+}
 
 #prevButton:hover {opacity:1;}
 #nextButton:hover {opacity:1;}

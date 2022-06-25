@@ -6,16 +6,32 @@
 #wrapper {margin :0 auto; width:1280px; font-size:14px; }
 
 
-header { background:#a5d4c0;position:fixed; width:100%;}
+header { background:#a5d4c0; position:fixed; z-index:10; width:100%;}
 
+#wholeMenuFrame {
+	justify-content:space-between;
+	display:flex;
+	align-items:center;
+}
+
+#menuFrame1 { display:flex;
+	
+}
+#menuFrame2 { display:flex; 
+	
+}
+
+#menuFrame3 {
+	display:flex;
+}
 
 /* header 로고, 버튼 정렬 */
 
-#menuTabBox { 
+/* #menuTabBox { 
 	display:flex;
 	justify-content:space-between;
 	
-}
+} */
 
 
 #menuTab { 
@@ -50,9 +66,9 @@ header { background:#a5d4c0;position:fixed; width:100%;}
 /* 검색창  */
 
 .searchBox {display:flex; 
-justify-content:space-between; 
-	margin-left:370px;
+	justify-content:space-between; 
 	background:#fff;
+	margin-right:230px;
 }
 
 .searchButton { display:flex; 
@@ -69,7 +85,7 @@ justify-content:space-between;
 
 /* 버튼 우측 정렬 */
 #buttonbox {
-	margin:20px 40px 0 0;
+	margin:20px 40px 20px 0;
 	align-items:center;
 }
 
