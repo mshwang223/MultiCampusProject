@@ -101,4 +101,12 @@
 }
 
 /* 마스터 계정 로그인시 display 설정 평소엔 none */
-#buttonbox #master,  #admin, #myPage{display:none;} 
+#buttonbox #master,  #admin, #myPage{display:none;}
+
+/* 로그인 시 사용자 이름 보이기 */
+#user {
+	font-size: 26px;
+	font-weight: bold;
+	margin-right: 30px;
+	margin-top: 30px;
+} 
