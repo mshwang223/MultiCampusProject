@@ -4,7 +4,7 @@
  
  $(document).ready(function(){
 	
-	$('#nickname').focus();
+	$('#name').focus();
 
 	$(document).on('keydown', function(e){
 		if(e.keyCode == 13) return false;

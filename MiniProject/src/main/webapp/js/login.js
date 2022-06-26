@@ -27,6 +27,11 @@
 			$('#pwdBox').focus();
 			return false;
 		}
+		
+		window.sessionStorage.setItem('id', id);
+		window.sessionStorage.setItem('pw', pw);
+		
+		window.location.href="index.html";
 	});
 	
 	$('#join').on('click', function(){

@@ -9,12 +9,19 @@
 		<script src="js/join.js"></script>
 	</head>
 	<body>
+		<img src="image/logo-3.png">
 		<h1  align="center">Join us</h1>
         <br><hr>
     	<div id="wrap">
               <div id="joinBox">        
                    <form id="joinForm" action="#">
-                       <table>	
+                       <table>
+                       		<tr>
+                               <td>성명</td>
+                               <td>
+                               		<input type="text" id="name" class="textBox">
+                               </td>
+                           </tr>	
                            <tr>
                                <td>닉네임</td>
                                <td>
@@ -43,11 +50,11 @@
                            <tr>
                                <td>생년월일</td>
                                <td>
-                                   <input type="text" id="birthYear" class="textBox" size="3">년
+                                   <input type="text" id="birthYear" class="textBox" size="3">&nbsp;년&nbsp;
                                    <select id="birthMonth" class="textBox">
                                        <option value="1">1
                                        <option value="2">2
-                                       <option value="4">3
+                                       <option value="3">3
                                        <option value="4">4
                                        <option value="5">5
                                        <option value="6">6
@@ -57,11 +64,11 @@
                                        <option value="10">10
                                        <option value="11">11
                                        <option value="12">12 
-                                   </select> 월
+                                   </select> &nbsp;월&nbsp;
                                    <select id="birthDay" class="textBox">
                                        <option value="1">1
                                        <option value="2">2
-                                       <option value="4">3
+                                       <option value="3">3
                                        <option value="4">4
                                        <option value="5">5
                                        <option value="6">6
@@ -90,9 +97,11 @@
                                        <option value="29">29
                                        <option value="30">30
                                        <option value="31">31 
-                                   </select> 일
-                                   <input type="radio" name="solar" value="양력" checked>양력
-                                   <input type="radio" name="solar" value="음력">음력
+                                   </select> &nbsp;일
+                                   &nbsp;&nbsp;
+                                   <label><input type="radio" name="solar" value="양력" checked>양력</label>
+                                   &nbsp;&nbsp;&nbsp;
+                                   <label><input type="radio" name="solar" value="음력">음력</label>
                                </td>
                            </tr>   
                            <tr>
@@ -138,8 +147,9 @@
                            <tr>
                                <td>이메일 수신 여부</td>
                                <td>
-                                   <input type="radio" name="emailRcv" value="yes">예
-                                   <input type="radio" name="emailRcv" value="no">아니오
+                                   <label><input type="radio" name="emailRcv" value="yes">예</label>
+                                   &nbsp;&nbsp;&nbsp;&nbsp;
+                                   <label><input type="radio" name="emailRcv" value="no">아니오</label>
                                </td>
                            </tr>       
                             <tr>
