@@ -20,6 +20,10 @@
 	border-left-width:8px;
 }
 
+.card:hover{
+	border: 4px solid #a5d4c0;
+}
+
 .highlight {
 	border-left: 8px solid #a5d4c0;
 }

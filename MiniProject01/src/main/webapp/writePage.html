@@ -53,19 +53,21 @@ $(document).ready(function() {
 });
 </script>
 	<div class="container-fluid" style="margin: 0; padding: 0;">
+		
 		<div class="row">
 			<div class="col-lg-2 d-none d-xl-block d-lg-block">
 			</div>
 			<div class="col-lg-8 col-12">
 				<br>
+				
 				<nav class="listSize" style="padding: 0; margin: auto">
 					<div class="container" style="padding: 10px;">
 						<div class="row">
 							<div class="col-auto me-auto" style="font-size: 1.5em; color:#a5d4c0;">
 								<i class="fa-solid fa-lg fa-pen-to-square" style="margin-right:10px"></i>게시물 작성</div>
 							<div class="col-auto">
-								<button id="btn" class="btn-gradient red">취소</button>
-								<button id="btn" class="btn-gradient cyan">저장</button>
+								<button id="btn" class="btn-gradient red"  onClick="history.go(-1)">취소</button>
+								<button id="btn" class="btn-gradient cyan"  onClick="history.go(-1)">저장</button>
 							</div>
 						</div>
 					</div>

@@ -100,7 +100,7 @@ $(document).ready(function() {
 
 	};
 
-	var jsonData = JSON.parse(JSON.stringify(Data));
+	var jsonData = JSON.parse(JSON.stringify(Data2));
 		console.log(jsonData.Question);
 		console.log(jsonData.Question.length);
 		

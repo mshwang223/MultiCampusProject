@@ -6,6 +6,7 @@
 <script src="json/dummyData.json" type="text/javascript"></script>
 <script src="js/tabMenu.js"></script>
 <script src="js/ImportList.js"></script>
+<script src="js/session.js"></script>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
@@ -34,17 +35,19 @@
 				<br>
 				<nav class="listSize" style="padding: 0; margin: auto">
 					<div class="container" style="padding: 10px;">
-						<div class="row" style="background-color: #a5d4c0; padding:10px; margin:5px;">
+						<div class="row"
+							style="background-color: #a5d4c0; padding: 10px; margin: 5px;">
 							<div class="col-lg-5 col-12 align-self-center">
-								<a style="color: white; margin-right: 10px;" href="#">공지사항</a> <a
-									style="color: white; margin-right: 10px;" href="#">자유게시판</a> <a
-									style="color: white; margin-right: 10px;" href="#">질문게시판</a> <a
-									style="color: white; margin-right: 10px;" href="#">건의게시판</a>
+								<a style="color: white; margin-right: 10px;" href="noticePage.html">공지</a> <a
+									style="color: white; margin-right: 10px;" href="#">뉴스</a> <a
+									style="color: white; margin-right: 10px;" href="freePage.html">자유</a> <a
+									style="color: white; margin-right: 10px;" href="questionPage.html">질문</a><a
+									style="color: white; margin-right: 10px;" href="propositionPage.html">건의</a>
 							</div>
 							<div class="col-lg-7 col-12" style="height: auto;">
 								<form class="d-flex">
-									<input class="form-control" type="search" placeholder="Search"
-										aria-label="Search">
+									<input class="form-control" type="search" placeholder="검색어를 입력하세요"
+										aria-label="검색어를 입력하세요">
 									<button class="btnSearch">
 										<i class="fa-solid fa-magnifying-glass"></i>
 									</button>
@@ -62,22 +65,15 @@
 								<button id="listAdd" class="btn-gradient cyan">작성</button>
 							</div>
 						</div>
-
 						<div class="row">
 							<div class="col-lg-7 col-md-7 me-auto col-12 align-self-end"
 								style="height: auto; font-size: 0.7em;">
-								<ul id="tapMenu" class="nav nav-pills">
-									<li class="nav-item"><a class="nav-link active"
-										aria-current="page" href="#">최신순</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">추천순</a>
-									</li>
-									<li class="nav-item"><a class="nav-link" href="#">댓글순</a>
-									</li>
-									<li class="nav-item"><a class="nav-link" href="#">스크랩순</a>
-									</li>
-									<li class="nav-item"><a class="nav-link" href="#">조회순</a>
-									</li>
-								</ul>
+								<div id="tapMenu" style="display: flex;">
+									<button class="btnFilter btnFilterActive">최신순</button>
+									<button class="btnFilter">추천순</button>
+									<button class="btnFilter">댓글순</button>
+									<button class="btnFilter">조회순</button>
+								</div>
 							</div>
 							<div class="col-lg-5 col-md-5 col-12" style="height: auto;">
 
@@ -89,18 +85,20 @@
 
 				</ul>
 				<br>
-				<nav aria-label="Page navigation example">
-					<ul class="pagination justify-content-center">
-						<li class="page-item disabled"><a class="page-link" href="#"
-							tabindex="-1" aria-disabled="true">Previous</a></li>
-						<li class="page-item"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item"><a class="page-link" href="#">Next</a>
-						</li>
-					</ul>
-				</nav>
-
+				<div class="row">
+					<div class="col"></div>
+					<div class="col">
+						<div style="display: flex; margin: 0 auto;">
+							<button class="btnFilter"><<</button>
+							<button class="btnFilter btnFilterActive">1</button>
+							<button class="btnFilter">2</button>
+							<button class="btnFilter">3</button>
+							<button class="btnFilter">>></button>
+						</div>
+					</div>
+					<div class="col"></div>
+				</div>
+				
 			</div>
 
 		</div>
