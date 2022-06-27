@@ -76,6 +76,11 @@
 					<img src="image/controlButton1.png" class="controlButton">
 				</div>
                 
+              	 <div id="prevNextBtn">
+					<img id="prevBtn" src="image/prevButton.png">
+					<img id="nextBtn" src="image/nextButton.png">
+				</div>
+              	
                 <div id="slideShowBox">
 					<div id="slidePanel">
 						<a href="https://recruit.nts-corp.com/nts/recruitMain" target="_blank"><img src= "image/slideImage1.jpeg" class="slideImage"></a>
@@ -85,6 +90,8 @@
 						<a href="https://abit.ly/wu5ekl" target="_blank"><img src= "image/slideImage5.jpeg" class="slideImage"></a>
 					</div>
 				</div> <!-- slideShowBox 끝 -->
+				
+				
 			
              </article>   <!-- 게시판 컨트롤 버튼 -->
                
@@ -120,11 +127,11 @@
 				
 				<div class="imageFontBox">
 					<div class="imagebox">
-						<h2><a href="#"><img src="image/menuNotice.png"></a></h2>
+						<h2><a href="html/noticePage.html"><img src="image/menuNotice.png"></a></h2>
 					</div> <!-- imagebox -->	
 					
 					<div class="fontbox">
-						<h3><a href="#">공지사항</a></h3>
+						<h3><a href="html/noticePage.html">공지사항</a></h3>
 					 </div> <!-- fontbox -->
 				</div> <!--  imageFontBox-->
 				
@@ -182,12 +189,12 @@
 			<div class ="QNA">
 				<div class ="imageFontBox">
 						<div class="imagebox">
-							<h2><a href="#"><img src="image/menuQnA.png"></a></h2>
+							<h2><a href="html/questionPage.html"><img src="image/menuQnA.png"></a></h2>
 						</div> <!-- imagebox -->
 						<div class="fontbox">
-							<h3><a href="#">QnA</a></h3>
-							<a href="#" class="QnA"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-						</div> <!-- fontbox -->
+							<h3><a href="html/questionPage.html">QnA</a></h3>
+<!-- 							<a href="html/questionPage.html" class="QnA"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+ -->						</div> <!-- fontbox -->
 					</div> <!--imageFontBox -->
 					
 				<div class="personalID">
@@ -327,10 +334,10 @@
 			<div class="recruit">
 				<div class="imageFontBox">
 					<div class="imagebox">
-						<h2><a href="#"><img src="image/menuRecruit.png"></a></h2>
+						<h2><a href="html/noticePage.html"><img src="image/menuRecruit.png"></a></h2>
 					</div><!-- imagebox -->
 					<div class="fontbox">
-						<h3><a href="#">공고</a></h3>
+						<h3><a href="html/noticePage.html">공고</a></h3>
 					</div><!-- fontbox -->
 				</div><!-- imageFontBox -->
 		
@@ -391,11 +398,11 @@
 			<div class="WeeklyBest">
 				<div class="imageFontBox">
 					<div class="imagebox">
-						<h2><a href="#"><img src="image/menuBest.png"></a></h2>
+						<h2><a href="html/freePage.html"><img src="image/menuBest.png"></a></h2>
 					</div> <!--imagebox  -->
 					
 					<div class="fontbox">
-						<h3><a href="#">Weekly Best</a></h3>
+						<h3><a href="html/freePage.html">Weekly Best</a></h3>
 					</div><!--fontbox  -->
 				</div> <!-- imageFontBox -->
 							
@@ -454,13 +461,13 @@
 				<div class ="freeboard">
 					<div class="imageFontBox">
 						<div class="imagebox">
-							<h2><a href="#"><img src="image/menuBoard.png"></a></h2>
+							<h2><a href="html/freePage.html"><img src="image/menuBoard.png"></a></h2>
 						</div> <!-- imagebox -->
 						
 						<div class="fontbox">
-							<h3><a href="#">자유 게시판</a></h3>
-							<a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-						</div> <!-- fontbox -->
+							<h3><a href="html/freePage.html">자유 게시판</a></h3>
+<!-- 							<a href="html/freePage.html"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+ -->						</div> <!-- fontbox -->
 					</div>  <!-- imageFontBox -->
 							
 					<div class="personal">
@@ -593,9 +600,9 @@
 						<a href="https://abit.ly/iuonzy" target="_blank"><img class="adImage2" src="image/adImage2.png"></a>
 					</div> <!-- adImgBox -->
 					
-					<div class="adImgBox3">
+<!-- 					<div class="adImgBox3">
 						<a href="https://abit.ly/ohwkt8" target="_blank"><img class="adImage3" src="image/adImage3.jpeg"></a>
-					</div> <!-- adImgBox -->
+					</div> adImgBox -->
 				</div> <!--advertise  -->
 			
 				
@@ -605,25 +612,50 @@
 			
 		</section>
 			<footer>
-				<ul>
-					<li><a href="#">About 위더스 |</a></li>
-					<li><a href="#">개인정보보호 |</a></li>
-					<li><a href="#">광고 문의 |</a></li>
-					<li><a href="#">Contact | </a></li>
-					<li>Github v1.5 .4</li>
-				</ul>
+				<div id="footerFrmae">
+					<div id="footerframe1">
+						<div id="logoListBox">
+							<div id="logoBox">
+								<h3><img src="image/footerLogo.png" id= "footerLogo"></h3>
+							</div> <!-- logoBox -->
+							
+							<div id="listBox">
+								<ul>
+									<li><a href="index.html">About 위더스 |</a></li>
+									<li><a href="#">개인정보보호 |</li>
+									<li><a href="#">광고 문의 |</a></li>
+									<li><a href="#">Contact | </a></li>
+									<li>Github v1.5 .4</li>
+								</ul>
+								
+								<hr id="footerline"> 
+								
+								<ul id="information">
+									<li>상호명 : 위더스 |</li>
+									<li>대표명 : 박상완 |</li>
+									<li>사업자 등록번호 : xxx-xxxx-xxxx-xxx |</li>
+									<li>문의</li>
+								</ul> <!-- information -->
+			
+							</div><!-- listBox -->
+						</div><!-- logoListBox -->
+						
+						<ul id="footerAddress">
+							<li>주소 | 서울특별시 강남구 언주로 508</li>
+							<li>@ 2022 (주)위더스</li>
+						</ul> <!-- footerAddress -->
+						
+						</div><!--footerframe1  -->
+						<div id="footerFrmae2"> 
+						<div id="iconBox">
+							<ul id="icon">
+								<li><a href="https://www.flaticon.com/"><img src="image/flat.png" id="flat"></a></li>							
+								<li><a href="https://github.com/"><img src="image/github.png" id="git"></a></li>
+							</ul>
+						</div> <!-- iconBox -->
 				
-				<ul>
-					<li>상호명 | 위더스</li>
-					<li>대표명 |</li>
-					<li>사업자 등록번호 |</li>
-					<li>문의</li>
-				</ul>
-				<ul>
-					<li>주소 : </li>
-					<li>서울특별시 강남구 언주로 508</li>
-				</ul>
-				
+					</div><!-- footerFrmae2 -->
+				</div> <!-- footerFrmae -->
 			</footer>		
 		</div> <!-- container  -->
 		</div><!-- wrapper -->

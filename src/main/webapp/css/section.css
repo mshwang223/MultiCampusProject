@@ -30,16 +30,16 @@ body { background:#f8f9fa;; }
 		margin-left:80px;
 }
 
-.public { width:400px;
-
+.public { 
+	width:480px;
 }
 
 .QNA { margin-top:30px;
-	width:450px;
+	width:480px;
 }
 
 .freeboard {
-	width:560px;
+	width:480px;
 	margin-top:30px;
 }
 
@@ -52,16 +52,16 @@ body { background:#f8f9fa;; }
 .recruit {
 	margin-top:30px;
 	margin-bottom:30px;
-	width:400px;
+	width:480px;
 }
 
 /* 특수 기호 배치 */
 .fontbox i {
-		margin-left:420px;
+		margin-left:350px;
 }
 
 .fontbox .QnA i {
-		margin-left:350px;
+		margin-left:370px;
 }
 /*  개인 게시글 설정 */
 
@@ -113,21 +113,23 @@ body { background:#f8f9fa;; }
 	
 }
 
-.adImage1 { width:100%;
+.adImage1 { width:480px;
 		margin-top:30px;
 }
 
 .adImage2{
 	flex-direction:row;
-	margin-right:30px;
-	margin-top:30px;
+	width:480px;
+	margin: 30px 30px 30px 0;
 	
 }
 
-.adImage3 {
+/* .adImage3 {
 	margin-bottom:20px;
-}
+	width:480px;
+	
+	.adImgBox3 a:hover {opacity:0.5;}
+} */
 
 .adImgBox1 a:hover {opacity:0.5;}
 .adImgBox2 a:hover {opacity:0.5;}
-.adImgBox3 a:hover {opacity:0.5;}
