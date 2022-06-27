@@ -3,7 +3,7 @@
  *  index.html 에서 사용
  */
  
- $(document).ready(function(){
+$(document).ready(function(){
 	
 	// 회원 가입 버튼 클릭 시 페이지 이동
 	$('#join').on('click', function(){
@@ -64,9 +64,5 @@
 		$('#login').show();
 		$('#logout').hide();
 	}
-	
-	/* // moveTotop 이미지 클릭 시 top으로 이동
-	$('#moveToTop').on('click', function(){
-		$('html, body').animate({scrollTop:0}, 500);
-	}); */
+
 });

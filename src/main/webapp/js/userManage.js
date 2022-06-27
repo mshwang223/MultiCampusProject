@@ -41,11 +41,11 @@ function deleting() {
 	const checkbox = $('input[name=selected]:checked');
 
 	if (checkbox.length == 0) {
-		alert("체크항목이 없습니다.");
+		alert("체크 항목이 없습니다.");
 		return;
 	}
 
-	if (confirm('삭제하겠습니까')) {
+	if (confirm('삭제 하시겠습니까?')) {
 		alert('아직 기능을 구현하지 못했습니다.');
 		checkboxAll.prop('checked', false);
 		checkbox.prop('checked', false);

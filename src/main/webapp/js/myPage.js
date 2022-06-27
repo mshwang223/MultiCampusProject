@@ -14,7 +14,7 @@ $(document).ready(function(){
 		} else if(inputpw == pw) {
 			window.location.href = "myPage2.html";
 		} else {
-			alert("비밀번호가 틀렸습니다.");
+			alert("비밀번호가 일치하지 않습니다.");
 			return false;
 		}
 	});

@@ -63,7 +63,7 @@ $(document).ready(function() {
 			subText1_2.style.animation = "disappear 1s";
 		}
 
-		if (value > 700) {
+		if (value > 500) {
 			subText2.style.animation = "opacity 3s forwards";
 			subText2_2.style.animation = "opacity 4s forwards";
 		} else if (value < 200) {
@@ -71,7 +71,7 @@ $(document).ready(function() {
 			subText2_2.style.animation = "disappear 1s";
 		}
 
-		if (value > 1125) {
+		if (value > 900) {
 			subText3.style.animation = "opacity 3s forwards";
 			subText3_2.style.animation = "opacity 4s forwards";
 		} else if (value < 200) {
@@ -79,15 +79,15 @@ $(document).ready(function() {
 			subText3_2.style.animation = "disappear 1s";
 		}
 
-		if (value > 2000) {
+		if (value > 1700) {
 			sub4box1.style.animation = "move 2s linear infinite";
 			sub4box2.style.animation = "move 2s linear 0.5s infinite";
 			sub4box3.style.animation = "move 2s linear 1s infinite";
 			sub4box4.style.animation = "move 2s linear 1.5s infinite";
-			sub4box5.style.animation = "move 2s linear 2s infinite";
+			sub4box5.style.animation = "move 2s linear 2.3s infinite";
 		}
 
-		if (value > 2900) {
+		if (value > 2000 && value < 2100) {
 			setInterval(typing5, 100);
 			setInterval(typing5_2, 50);
 		}

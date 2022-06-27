@@ -32,7 +32,7 @@
 		}
 		
 		if($('#pwd').val() != $('#pwdCheck').val()){
-			alert("비밀번호확인이 다릅니다");
+			alert("비밀번호가 일치하지 않습니다.");
 			$('#pwdCheck').focus();
 			return false;
 		}
