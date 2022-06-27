@@ -17,18 +17,6 @@
 }
 
 /************ 메인메뉴 **************/
-/* 
-#mainMenu {
-	width:99.5vw;
-	height: 18vh;
-	top:0;
-	background-color: rgb(243, 243, 243);
-	position: fixed;
-	border-radius: 0 0 30px 30px;
-	z-index: 20;
-}
-*/
-
 #mainMenu {
 	width:99.5vw;
 	height: 12vh;
@@ -37,15 +25,6 @@
 	position: fixed;
 	z-index: 20;
 }
-
-/*
-#mainMenu img {
-	position:absolute;
-	width:7vw;
-	top:18%;
-	left:2%;
-}
-*/
 
 #mainMenu img {
 	padding: 20px;	
@@ -66,10 +45,12 @@
 	font-size:16px; 
 	padding:5px;
 	margin-left:5px;
+	text-decoration: none;
 }
 
-#mainMenu>div:nth-child(2)>ul>li>a:hover { color:rgba(27,188,194,1); background:#fff; 
-	text-decoration:underline;
+#mainMenu>div:nth-child(2)>ul>li>a:hover { 
+	color:rgba(27,188,194,1); 
+	background:#fff; 
 }
 
 #mainMenu>div:nth-child(3)>ul {
