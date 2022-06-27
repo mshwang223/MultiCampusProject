@@ -8,6 +8,10 @@
   font-size: 16px;
 }
 
+a {
+   text-decoration: none;
+}
+
 /* 버튼 레이아웃 */
 /* Gradient buttons */
 .btn-gradient {
