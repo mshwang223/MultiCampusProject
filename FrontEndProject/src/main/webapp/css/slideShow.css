@@ -38,3 +38,29 @@
 	width:800px;
 	max-height:480px;
 }
+
+#prevNextBtn {
+	display:flex;
+	justify-content:space-between;
+	position:relative;
+}
+#prevBtn {
+	display:flex;
+	position:absolute;
+	top:250px;
+	left:-680px;
+	opacity:0.8; 
+	cursor:pointer;
+}
+
+#nextBtn {
+	position:absolute;
+	top:250px;
+	left:450px;
+	opacity:0.8; 
+	cursor:pointer;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+	opacity:1;
+}
