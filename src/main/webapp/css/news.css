@@ -5,6 +5,8 @@
 #wrap {
 	margin:0 auto;
 	overflow:hidden;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: bold;
 }
 
 #background {
@@ -63,7 +65,6 @@
 	color: black;
 	font-size:16px; 
 	padding:5px;
-	font-weight:bold;
 	margin-left:5px;
 }
 
