@@ -6,21 +6,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>회원가입</title>
-		<script src="js/jquery-3.6.0.min.js"></script>
-		<script src="js/MenuTab.js"></script>
-		<script src="js/join.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/common.css">
-		<link rel="stylesheet" type="text/css" href="css/joinSection.css">
+		<script src="<c:url value='/js/jquery-3.6.0.min.js'/>"></script>
+		<script src="<c:url value='/js/MenuTab.js'/>"></script>
+		<script src="<c:url value='/js/join.js'/>"></script>
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/joinSection.css'/>">
+		
 	</head>
 	<body>
 		<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<section>
 			<div class="loginBox">
-				<h1>회원가입</h1>
-				<h2><a href="#"><img src="image/logo-withus3.PNG"></a></h2>
+				<h1>회원가입</h1> 
+				<h2><a href="#"><img src="<c:url value='/image/logo-withus3.PNG'/>"></a></h2>
 				<h4>
-					계정이 이미 있는 경우에는 <a href="login.html"><span class="colorFont">로그인</span></a>해주세요.<br><br>
+					계정이 이미 있는 경우에는 <a href="<c:url value='loginForm'/>"><span class="colorFont">로그인</span></a>해주세요.<br><br>
 					가입을 하면 <span class="colorFont">WITH:US의 개발자 사이트의 이용약관</span>,<br><br>
 					<span class="colorFont">개인정보취급방침</span>에 동의하게 됩니다.<br><br>
 					가입 후 아이디는 변경할 수 없습니다.
@@ -108,7 +109,8 @@
 					</div> <!-- inputBox -->
 				</form>
 			</div><!--loginBox  -->
-			<a href="<c:url value='/myPageEdit'/>">마이페이지편집</a>
+			<a href="<c:url value='/myPage'/>">마이페이지</a>
+			<a href="<c:url value='/joinComplete'/>">회원가입완료</a>
 		</section>
 		
 		<c:import url="/WEB-INF/views/layout/bottom.jsp"/>

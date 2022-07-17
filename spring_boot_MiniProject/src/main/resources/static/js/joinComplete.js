@@ -7,12 +7,12 @@
 	
 	// 로그인 버튼 클릭 시 로그인 페이지 이동
 	$('.loginBtn').on('click', function(){
-		window.location.href="login.html"; 
+		window.location.href="/loginForm"; 
 	});
 	
 	// 홈 버튼 클릭 시 메인 페이지 이동
 	$('.homeBtn').on('click', function(){
-		window.location.href="../index.html"; 
+		window.location.href="/"; 
 	});
 	
 }); // document.ready

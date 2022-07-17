@@ -48,6 +48,12 @@ public class MiniPjController {
 		return "subPage/join";
 	}
 	
+	// 회원가입 완료 페이지 보기
+	@RequestMapping("/joinComplete")
+	public String viewjoinComplete() {
+		return "subPage/joinComplete";
+	}
+	
 	// 게시글 작성페이지 보기
 	@RequestMapping("/writePage")
 	public String viewWritePage() {
@@ -60,9 +66,27 @@ public class MiniPjController {
 		return "subPage/myPage";
 	}
 	
-	
+	// 마이 페이지 편집 보기
 	@RequestMapping("/myPageEdit")
 	public String viewMyPageEdit() {
 		return "subPage/myPageEdit";
+	}
+	
+	// 마이페이지 질문 보기
+	@RequestMapping("/myPageQuestion")
+		public String viewMyPageQuestion() {
+			return "subPage/myPageQuestion";
+		}
+		
+	// 마이페이지 답변 보기
+	@RequestMapping("/myPageAnswer")
+	public String viewMyPageAnswer() {
+		return "subPage/myPageAnswer";
+	}
+	
+	// 마이페이지 댓글 보기
+	@RequestMapping("/myPageComment")
+	public String viewMyPageComment() {
+		return "subPage/myPageComment";
 	}
 }

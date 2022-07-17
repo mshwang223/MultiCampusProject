@@ -5,33 +5,46 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-		<title>마이 페이지 편집</title>
+		<title>myPage:Edit</title>
 	</head>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/joinSection.css">
-	<script src="js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
+	<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
+	<link rel="stylesheet" type="text/css" href="<c:url value='/css/MyPageEdit.css'/>">
+	<script src="<c:url value= '/js/jquery-3.6.0.min.js'/>"></script>
+	<script src="<c:url value='/js/join.js'/>"></script>
+	<script src="<c:url value='/js/myPageEdit.js'/>"></script>
+	
 	
 	<body>
 		<div class="wrapper">
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<section>
-			<div class="loginBox">
-				<h1>마이 페이지 편집</h1>
-				<h2><a href="#"><img src="image/logo-withus3.PNG"></a></h2>
-				<h4>
-					계정이 이미 있는 경우에는 <a href="login.html"><span class="colorFont">로그인</span></a>해주세요.<br><br>
-					가입을 하면 <span class="colorFont">WITH:US의 개발자 사이트의 이용약관</span>,<br><br>
-					<span class="colorFont">개인정보취급방침</span>에 동의하게 됩니다.<br><br>
-					가입 후 아이디는 변경할 수 없습니다.
-				</h4>
+			<div class="myPageBox">
+					<h1>마이 페이지</h1>
+				<div class="userProfileBox">
+					<div class="userBox">
+						<div class="boxImage"><img src="<c:url value = '/image/user.png'/>"></div>
+						<div class="boxUser">
+							<ul class="fontBox">
+								<li>hong</li>
+								<li>0</li>
+								<li>POINT</li>
+							</ul>
+							<ul class ="pointBox">
+								<li><img src="<c:url value='/image/yellowCircle.png'/>"><span class="point">0</span></li>
+								<li><img src="<c:url value='/image/grayCircle.png'/>"><span class="point">0</span></li>
+								<li><img src="<c:url value='/image/redCircle.png'/>"><span class="point">0</span></li>
+							</ul> <!-- pointBox -->
+						</div> <!-- boxUser -->
+					</div> <!-- userBox -->
+				</div> <!-- userProfileBox -->
 				
-				<form method="post" class="joinFrm" name="joinFrm">
+				<form method="post" class="EditFrm" name="EditFrm">
 					<div class="inputBox">
 						<div class="windowFontBox">
 							<span>이름</span>
 							<div class="inputEvent">
-								<input type="text" class="nameInput">
+								<input type="text" class="nameInput" readonly placeholder="이름 변경 불가">
 								<i></i>
 							</div><!--inputEvent  -->
 						</div> <!-- "windowFontBox" -->	
@@ -53,21 +66,17 @@
 						<div class="windowFontBox">
 							<span>아이디</span>
 							<div class="inputEvent">
-								<input type="text" class="idInput" readonly>
+								<input type="text" class="idInput" readonly placeholder="아이디 변경 불가">
 								<i></i>
 							</div> <!-- inputEvent -->	
 						</div> <!-- "windowFontBox" -->
-						
-						<div class= idBtnBox>
-								<input type="button" class="idBtn btn-gradient cyan" value="확인">
-						</div>
 					</div> <!-- idInputBox -->
 					
 						<div class="emailBox">
 							<div class ="windowFontBox"> 	
 								<span>이메일</span>
 								<div class="inputEvent">
-									<input type="text" class="emailInput" readonly>
+									<input type="text" class="emailInput">
 									<i></i>
 								</div> <!-- inputEvent -->
 								&nbsp;&nbsp;
@@ -103,13 +112,14 @@
 								<i></i>
 							</div>	<!-- inputEvent -->
 						</div> <!-- windowFontBox -->
-							
-						<input type="submit" class="joinBtn btn-gradient cyan" value="가입하기">
+						
+						<div class="btnBox">
+							<input type="submit" class="editBtn btn-gradient cyan" value="수정">
+							<input type="reset" class="resetBtn btn-gradient red" value="취소">
+						</div>	<!-- btnBox -->
 					</div> <!-- inputBox -->
 				</form>
-			</div><!--loginBox  -->
-			<a href="<c:url value='/myPageEdit'/>">마이페이지편집</a>
-		</section>
+			</div> <!-- myPageBox -->
 		</section>
 		
 			<c:import url="/WEB-INF/views/layout/bottom.jsp"/>
