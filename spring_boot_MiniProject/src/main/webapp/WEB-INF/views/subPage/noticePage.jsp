@@ -19,20 +19,25 @@
 	<body>
 		<c:import url="/WEB-INF/views/layout/top.jsp"/>
 		<section>
-			<div id="bodyWrap">
-				<div id="createNotice">
-					<button>새 공지 작성하기</button>
+			<div class="bodyWrap">
+				<div class="createNotice">
+					<button class="btn-gradient blue">새 공지 작성하기</button>
 				</div>
-				<div id="noticeBox">
-					<div id="arrayTitle">
+				<div class="noticeBox">
+					<div class="arrayTitle">
 						<button class="btnFilter btnFilterActive">최신순</button>
 						<button class="btnFilter">추천순</button>
 						<button class="btnFilter">댓글순</button>
 						<button class="btnFilter">조회순</button>
 					</div>
 					<div class="notice">
-						<div class="noticeTitle">
-							<a href="#"><h2>CSS Layout의 역사</h2></a>
+						<div class="noticeTitleBox">
+							<div class="noticeTitle">
+								<a href="#"><h2>CSS Layout의 역사</h2></a>
+							</div>
+							<div class="viewCount">
+								<i class="fa-solid fa-eye"></i><p>200</p>
+							</div>
 						</div>
 						<div class="noticeText">
 							Flexbox가 2012년도에 나왔습니다. 그 전까지는 얼마나 배치하는게 힘들었을까요.(야매가 아니라면) 센스있는 trick들에 의존했겠죠...
@@ -83,7 +88,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="pageNum">
+				<div class="pageNum">
 					<button class="btnFilter"><<</button>
 					<button class="btnFilter btnFilterActive">1</button>
 					<button class="btnFilter">2</button>

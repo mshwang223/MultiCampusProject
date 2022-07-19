@@ -4,9 +4,9 @@
  
   $(document).ready(function(){
  // 메뉴 언더라인 **************************************************
-	let underLine = document.getElementById("underline");
-	let menu = document.querySelectorAll("#topMenu a");
-	let firstMenu = document.querySelector("#topMenu a:nth-child(5)");
+	let underLine = document.querySelector(".underline");
+	let menu = document.querySelectorAll(".topMenu a");
+	let firstMenu = document.querySelector(".topMenu a:nth-child(5)");
 
 	
 	menu.forEach(x=>
@@ -24,23 +24,17 @@
 		underLine.style.width = firstMenu.offsetWidth + "px";
 		underLine.style.top =
 			firstMenu.offsetTop + firstMenu.offsetHeight + "px";
-		firstMenu.style.color = "rgba(69, 170, 245, 0.7)";
+		firstMenu.style.color = "rgba(102,152,203,1)";
 	}));
 });
 
  $(document).ready(function(){
-	let underLine = document.getElementById("underline");
-	let firstMenu = document.querySelector("#topMenu a:nth-child(5)");
+	let underLine = document.querySelector(".underline");
+	let firstMenu = document.querySelector(".topMenu a:nth-child(5)");
 	
 	 underLine.style.left = firstMenu.offsetLeft + "px";
 	underLine.style.width = firstMenu.offsetWidth + "px";
 	underLine.style.top =
 		firstMenu.offsetTop + firstMenu.offsetHeight + "px";
-	firstMenu.style.color = "rgba(69, 170, 245, 0.7)";	
-});
-
-$(document).ready(function(){
-	$('#menuImg').on('click', function(){
-		location.href = "../index.html";
-	});
+	firstMenu.style.color = "rgba(102,152,203,1)";	
 });

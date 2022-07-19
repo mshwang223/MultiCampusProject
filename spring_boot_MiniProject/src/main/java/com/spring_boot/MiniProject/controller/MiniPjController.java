@@ -60,4 +60,21 @@ public class MiniPjController {
 		return "subPage/myPage";
 	}
 	
+	// 뷰페이지 보기
+	@RequestMapping("/viewPage")
+	public String viewViewPage() {
+		return "subPage/viewPage";
+	}
+	
+	// 관리자페이지 보기
+	@RequestMapping("/adminPage")
+	public String viewadminPage() {
+		return "subPage/adminUser";
+	}
+	
+	// 마이페이지 수정 보기
+	@RequestMapping("/myPageEdit")
+	public String viewMyPageEditPage() {
+		return "subPage/myPageEdit";
+	}
 }
