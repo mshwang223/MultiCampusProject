@@ -12,8 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/admin.css'/>">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-	
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/adminSideBar.css'/>">
+  		
 	</head>
 	<body>
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
@@ -54,44 +54,32 @@
 				</ul>
 			</nav>
 			
+      		
 		
 			
-			<div class="search-box">
-		      <input type="text" class="search-txt" name=""placeholder="Type to search">
-		      <a class="search-btn" href="#">
-		        <i class="fas fa-search"></i>
-		      </a>
-		    </div>
-			
+			<form>
 				<div class="tableBox">
-					<form>
-						<table id="example-table-1" class="table table-bordered table-hover text-center">
-							<thead>
-								<tr>
-									<th>hashName</th>
-								</tr>
-							</thead>
+					<table class="manage">
+				        <thead>
+				        	<tr>
+				            	<th>Tag</th>
+				       	 	</tr>
+				        </thead>
+				        <tbody>
+				        	<tr><td>
+								<div class="select">
+								  <select>
+								    <option value="1">Pure CSS Select</option>
+								    <option value="2">No JS</option>
+								    <option value="3">Nice!</option>
+								  </select>
+								</div>
 							
-							<tbody>
-								<tr>
-									<td>
-										<select class="hastagName">
-											<option selected>Java</option>
-											<option>Python</option>
-											<option>C</option>
-											<option>C++</option>
-											<option>C+++</option>
-											<option>C+++</option>
-										</select>
-									</td>
-								</tr>								
-							</tbody>	
-						</table>						
-					</form>		
-					<div class="col-lg-12" id="ex1_Result1" ></div> 
-					<div class="col-lg-12" id="ex1_Result2" ></div> 
+				        </td></tr>
+				        </tbody>
+				    </table>			
 				</div> <!--tableBox  -->
-	
+		</form>	
 		</main> <!-- .cd-main-content -->
 	</section>	
 		<c:import url="/WEB-INF/views/layout/bottom.jsp"/>

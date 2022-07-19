@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/admin.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/adminSideBar.css'/>">
 	</head>
 	<body>
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
@@ -31,7 +32,6 @@
 					
 					<li class="has-children hashtag">
 						<a href="<c:url value="/adminHashTag"/>">Hashtag</a></li>
-						
 				</ul>
 	
 				<ul>
@@ -52,10 +52,9 @@
 					<li class="action-btn"><a href="#0">+ Button</a></li>
 				</ul>
 			</nav>
-	
-				<div class="tableBox">
-					<form>
-						<table id="example-table-1" class="table table-bordered table-hover text-center">
+			<form>
+					<div class="tableBox">
+						<table class="manage">
 							<thead>
 								<tr>
 									<th>userId</th>
@@ -63,8 +62,8 @@
 									<th>userName</th>
 									<th>userEmail</th>
 									<th>userImg</th>
-									<th>userActivateDate</th>
-									<th>userCreatedDate</th>
+									<th>userActDate</th>
+									<th>userCrdDate</th>
 									<th>userNickName</th>
 									<th>userCompany</th>
 									<th>roll</th>
@@ -84,16 +83,20 @@
 									<td>유저닉네임</td>
 									<td>소속</td>
 									<td>
-										<select class="userRoll">
-											<option>관리자</option>
-											<option>일반 사용자</option>
-										</select>
+										<div class="select">
+										  <select>
+										    <option value="1">관리자</option>
+										    <option value="2">사용자</option>
+										  </select>
+										</div>
 									</td>
 									<td>
-										<select class="userState">
-											<option>정상</option>
-											<option>밴</option>
-										</select>
+										<div class="select">
+										  <select>
+										    <option value="1">정상</option>
+										    <option value="2">밴</option>
+										  </select>
+										</div>
 									</td>
 								</tr>
 								
@@ -108,18 +111,23 @@
 									<td>유저닉네임</td>
 									<td>소속</td>
 									<td>
-										<select class="userRoll">
-											<option>관리자</option>
-											<option>일반 사용자</option>
-										</select>
+										<div class="select">
+										  <select>
+										    <option value="1">관리자</option>
+										    <option value="2">사용자</option>
+										  </select>
+										</div>
 									</td>
 									<td>
-										<select class="userState">
-											<option>정상</option>
-											<option>밴</option>
-										</select>
+										<div class="select">
+										  <select>
+										    <option value="1">정상</option>
+										    <option value="2">밴</option>
+										  </select>
+										</div>
 									</td>
 								</tr>
+								
 								<tr>
 									<td>유저아이디</td>
 									<td>유저비밀번호</td>
@@ -131,27 +139,26 @@
 									<td>유저닉네임</td>
 									<td>소속</td>
 									<td>
-										<select class="userRoll">
-											<option>관리자</option>
-											<option>일반 사용자</option>
-										</select>
+										<div class="select">
+										  <select>
+										    <option value="1">관리자</option>
+										    <option value="2">사용자</option>
+										  </select>
+										</div>
 									</td>
 									<td>
-										<select class="userState">
-											<option>정상</option>
-											<option>밴</option>
-										</select>
+										<div class="select">
+										  <select>
+										    <option value="1">정상</option>
+										    <option value="2">밴</option>
+										  </select>
+										</div>
 									</td>
 								</tr>
 							</tbody>	
-							
-							
 						</table>						
-					</form>		
-					<div class="col-lg-12" id="ex1_Result1" ></div> 
-					<div class="col-lg-12" id="ex1_Result2" ></div> 
 				</div> <!--tableBox  -->
-	
+			</form>
 		</main> <!-- .cd-main-content -->
 	</section>	
 		<c:import url="/WEB-INF/views/layout/bottom.jsp"/>

@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/admin.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/adminSideBar.css'/>">
 	</head>
 	<body>
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
@@ -51,18 +52,22 @@
 					<li class="action-btn"><a href="#0">+ Button</a></li>
 				</ul>
 			</nav>
-	
+			
+			<div class="searchBtn">
+				 <input type="text" autofocus class="inputBtn" placeholder="검색어 입력">
+			</div>
+
 				<div class="tableBox">
 					<form>
-						<table id="example-table-1" class="table table-bordered table-hover text-center">
+						<table class="manage">
 							<thead>
 								<tr>
 									<th>commentId</th>
 									<th>userId</th>
 									<th>noteId</th>
 									<th>comment</th>
-									<th>commentCreatedDate</th>
-									<th>commentUpdatedDate</th>
+									<th>commentCrdDate</th>
+									<th>commentUtdDate</th>
 									<th>commentLike</th>
 									<th>pageViewState</th>
 								</tr>
@@ -78,10 +83,13 @@
 									<td>수정일</td>
 									<td>좋아요 수</td>
 									<td>
-										<select class="pageView">
-											<option>예</option>
-											<option>아니오</option>
-										</select>
+										<div class="select pageView">
+										<div class="blank"></div>
+										  <select>
+										    <option value="1">예</option>
+										    <option value="2">아니오</option>
+										  </select>
+										</div>
 									</td>
 								</tr>
 							</tbody>	
@@ -89,8 +97,7 @@
 							
 						</table>						
 					</form>		
-					<div class="col-lg-12" id="ex1_Result1" ></div> 
-					<div class="col-lg-12" id="ex1_Result2" ></div> 
+					
 				</div> <!--tableBox  -->
 	
 		</main> <!-- .cd-main-content -->

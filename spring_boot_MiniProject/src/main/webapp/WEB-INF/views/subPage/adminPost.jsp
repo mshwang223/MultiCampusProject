@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/reset.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/common.css'/>">
 		<link rel="stylesheet" type="text/css" href="<c:url value='/css/admin.css'/>">
+		<link rel="stylesheet" type="text/css" href="<c:url value='/css/adminSideBar.css'/>">
 	</head>
 	<body>
 			<c:import url="/WEB-INF/views/layout/top.jsp"/>
@@ -51,10 +52,13 @@
 					<li class="action-btn"><a href="#0">+ Button</a></li>
 				</ul>
 			</nav>
-	
+			
+			<div class="searchBtn">
+				 <input type="text" autofocus class="inputBtn" placeholder="검색어 입력">
+			</div>
 				<div class="tableBox">
 					<form>
-						<table id="example-table-1" class="table table-bordered table-hover text-center">
+						<table class="manage">
 							<thead>
 								<tr>
 									<th>noteId</th>
@@ -64,9 +68,9 @@
 									<th>note</th>
 									<th>noteView</th>
 									<th>notesLike</th>
-									<th>noteCommentNum</th>
-									<th>noteCratedDate</th>
-									<th>noteUpdatedDate</th>
+									<th>noteCmtNum</th>
+									<th>noteCrdDate</th>
+									<th>noteUtdDate</th>
 									<th>hashName</th>
 									<th>pageViewState</th>
 								</tr>
@@ -84,28 +88,29 @@
 									<td>댓글 수</td>
 									<td>작성일</td>
 									<td>수정일</td>
-									<td>
-										<select class="hastagName">
-											<option selected>Java</option>
+									<td>	
+									    <select name="slct" id="slct">
+										    <option selected>Java</option>
 											<option>Python</option>
 											<option>C</option>
 											<option>C++</option>
 											<option>C+++</option>
 											<option>C+++</option>
-										</select>
+									    </select>
 									</td>
 									<td>
-										<select class="pageViewState">
-											<option selected>공개</option>
-											<option>비공개</option>
-										</select>
+										<div class="select">
+										    <select name="slct" id="slct">
+										      <option selected>공개</option>
+												<option>비공개</option>
+										    </select>
+										</div>
 									</td>
 								</tr>
 							</tbody>	
 						</table>						
 					</form>		
-					<div class="col-lg-12" id="ex1_Result1" ></div> 
-					<div class="col-lg-12" id="ex1_Result2" ></div> 
+			
 				</div> <!--tableBox  -->
 	
 		</main> <!-- .cd-main-content -->
